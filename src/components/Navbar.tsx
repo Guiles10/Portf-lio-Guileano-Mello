@@ -33,6 +33,7 @@ export default function Navbar() {
           <Link href="#expertise">// STATUS</Link>
           <Link href="#projetos">// CASES</Link>
           <Link href="#stack">// STACK</Link>
+          <Link href="#formacao">// FORMAÇÃO</Link>
           <Link href="#contato">// CONTATO</Link>
         </div>
       </div>
