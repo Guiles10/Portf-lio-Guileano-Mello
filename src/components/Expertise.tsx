@@ -73,7 +73,7 @@ export default function Expertise() {
             </div>
             <h3 className="exp-title">[UX/UI & Conversão]</h3>
             <ul className="exp-list">
-              <li>Desenho de Interfaces (Figma)</li>
+              <li>Desenho de Interfaces</li>
               <li>Landing Pages Focadas em ROI</li>
               <li>Testes A/B & Analytics</li>
               <li>Automações (CRM/Webhooks)</li>
