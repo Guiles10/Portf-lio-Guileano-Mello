@@ -37,7 +37,7 @@ export default function About() {
           </div>
           <div className="about-content">
             <h2 className="section-title" style={{ marginBottom: "2rem" }}>
-              Híbrido por Natureza. Resultados Orientados por Dados & Código.
+              Resultados Orientados por Códigos & Dados
             </h2>
             <p
               style={{
