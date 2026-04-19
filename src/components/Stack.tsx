@@ -1,0 +1,134 @@
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Reveal from "./Reveal";
+import { TECH_STACK } from "@/constants/tech-stack";
+import { MessageSquare, Target, Zap, Users, ShieldCheck, Layers, Code2, BrainCircuit } from "lucide-react";
+
+export default function Stack() {
+  const [activeTab, setActiveTab] = useState<"hard" | "soft">("hard");
+
+  const techCategories = [
+    { id: "Frontend", label: "[FRONTEND]" },
+    { id: "Backend", label: "[BACKEND]" },
+    { id: "Performance", label: "[PERFORMANCE & ADS]" },
+    { id: "Tools", label: "[TOOLS & SPECIALTIES]" },
+  ];
+
+  const softSkills = [
+    {
+      title: "Comunicação Técnica",
+      icon: <MessageSquare size={24} />,
+      desc: "Habilidade de traduzir conceitos complexos de programação e marketing para diferentes públicos, facilitando o alinhamento de expectativas."
+    },
+    {
+      title: "Foco em Resultados (ROAS)",
+      icon: <Target size={24} />,
+      desc: "Mentalidade orientada a performance, priorizando ações que geram retorno financeiro real e escalabilidade para o negócio."
+    },
+    {
+      title: "Resolução de Problemas",
+      icon: <Zap size={24} />,
+      desc: "Abordagem analítica e criativa para debugar códigos, otimizar processos internos e superar gargalos em funis de conversão."
+    },
+    {
+      title: "Liderança & Mentoria",
+      icon: <Users size={24} />,
+      desc: "Experiência prática em guiar desenvolvedores e estudantes, promovendo o aprendizado coletivo e a correção construtiva de projetos."
+    },
+    {
+      title: "Adaptabilidade Híbrida",
+      icon: <Layers size={24} />,
+      desc: "Capacidade de transitar entre o desenvolvimento full stack e o marketing digital de alta performance com agilidade."
+    },
+    {
+      title: "Confiabilidade & Entrega",
+      icon: <ShieldCheck size={24} />,
+      desc: "Comprometimento com prazos e qualidade técnica, garantindo que a solução final atenda aos requisitos de negócio e de performance."
+    }
+  ];
+
+  return (
+    <Reveal>
+      <section id="stack" className="container">
+        <span className="mono section-label">// 004 — COMPETÊNCIAS</span>
+        <h2 className="section-title section-header">Minhas Skills.</h2>
+
+        {/* Intuitive Switcher */}
+        <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: "1rem" }}>
+          <div className="skills-nav">
+            <button 
+              className={`skill-tab ${activeTab === "hard" ? "active" : ""}`}
+              onClick={() => setActiveTab("hard")}
+            >
+              <Code2 size={16} />
+              HARD SKILLS
+            </button>
+            <button 
+              className={`skill-tab ${activeTab === "soft" ? "active" : ""}`}
+              onClick={() => setActiveTab("soft")}
+            >
+              <BrainCircuit size={16} />
+              SOFT SKILLS
+            </button>
+          </div>
+        </div>
+
+        <div className="stack-content-wrapper">
+          <AnimatePresence mode="wait">
+            {activeTab === "hard" ? (
+              <motion.div
+                key="hard-skills"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className="stack-categories"
+              >
+                {techCategories.map((cat) => (
+                  <div className="category" key={cat.id} style={{ marginBottom: "3rem" }}>
+                    <h4 className="cat-title">{cat.label}</h4>
+                    <div className="stack-grid">
+                      {TECH_STACK.filter((tech) => tech.category === cat.id).map((tech) => (
+                        <div className="stack-item" key={tech.name}>
+                          <img
+                            src={`https://cdn.simpleicons.org/${tech.icon}/ffffff`}
+                            alt={tech.name}
+                            onError={(e) => {
+                              e.currentTarget.style.display = "none";
+                            }}
+                          />
+                          <span className="stack-name">{tech.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </motion.div>
+            ) : (
+              <motion.div
+                key="soft-skills"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className="soft-skills-grid"
+              >
+                {softSkills.map((skill, idx) => (
+                  <div className="soft-skill-card" key={idx}>
+                    <div className="soft-skill-icon-wrapper">
+                      {skill.icon}
+                    </div>
+                    <h4 className="soft-skill-title">{skill.title}</h4>
+                    <p className="soft-skill-desc">{skill.desc}</p>
+                  </div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </section>
+    </Reveal>
+  );
+}
