@@ -43,13 +43,13 @@ export default function Orbit() {
             </div>
           </div>
 
-          {/* Ring 2 (Middle) - Backend & Data */}
+          {/* Ring 2 (Middle) - Frontend & Backend Logic */}
           <div className="ring ring-2 duration-25 delay-2s">
             <div className="planet p-1" data-tooltip="Node.js">
               <img src="https://cdn.simpleicons.org/nodedotjs/ffffff" alt="Node.js" />
             </div>
-            <div className="planet p-2" data-tooltip="Python">
-              <img src="https://cdn.simpleicons.org/python/ffffff" alt="Python" />
+            <div className="planet p-2" data-tooltip="Sass">
+              <img src="/tech-logos/sass.png" alt="Sass" style={{ width: "24px", filter: "brightness(0) invert(1)" }} />
             </div>
             <div className="planet p-4" data-tooltip="PostgreSQL">
               <img src="https://cdn.simpleicons.org/postgresql/ffffff" alt="PostgreSQL" />
@@ -60,59 +60,67 @@ export default function Orbit() {
             <div className="planet p-7" data-tooltip="NestJS">
               <img src="https://cdn.simpleicons.org/nestjs/ffffff" alt="NestJS" />
             </div>
-            <div className="planet p-8" data-tooltip="Django">
-              <img src="https://cdn.simpleicons.org/django/ffffff" alt="Django" />
+            <div className="planet p-8" data-tooltip="HTML">
+              <img src="https://cdn.simpleicons.org/html5/ffffff" alt="HTML" />
+            </div>
+            <div className="planet p-3" data-tooltip="CSS">
+              <img src="/tech-logos/css.png" alt="CSS" style={{ width: "24px" }} />
             </div>
           </div>
 
-          {/* Ring 3 (Outer) - Tools & Infra */}
+          {/* Ring 3 (Outer) - Infra & Cloud Tools */}
           <div className="ring ring-3 duration-35 delay-4s">
             <div className="planet p-1" data-tooltip="Docker">
               <img src="https://cdn.simpleicons.org/docker/ffffff" alt="Docker" />
             </div>
             <div className="planet p-2" data-tooltip="AWS">
-              <img src="https://cdn.simpleicons.org/amazonwebservices/ffffff" alt="AWS" />
+              <img src="/tech-logos/aws.png" alt="AWS" style={{ width: "24px" }} />
             </div>
             <div className="planet p-3" data-tooltip="Tailwind CSS">
-              <img src="https://cdn.simpleicons.org/tailwindcss/ffffff" alt="Tailwind CSS" />
+              <img src="https://cdn.simpleicons.org/tailwindcss/ffffff" alt="Tailwind" />
             </div>
             <div className="planet p-5" data-tooltip="Git">
               <img src="https://cdn.simpleicons.org/git/ffffff" alt="Git" />
             </div>
-            <div className="planet p-6" data-tooltip="Sass">
-              <img src="https://cdn.simpleicons.org/sass/ffffff" alt="Sass" />
+            <div className="planet p-6" data-tooltip="CI/CD">
+              <img src="https://cdn.simpleicons.org/githubactions/ffffff" alt="CI/CD" />
             </div>
             <div className="planet p-7" data-tooltip="Vercel">
               <img src="https://cdn.simpleicons.org/vercel/ffffff" alt="Vercel" />
             </div>
             <div className="planet p-8" data-tooltip="OpenAI">
-              <img src="https://cdn.simpleicons.org/openai/ffffff" alt="OpenAI" />
+              <img src="/tech-logos/openai.png" alt="OpenAI" style={{ width: "24px" }} />
             </div>
           </div>
 
-          {/* Ring 4 (Satellite) - Specialized & Legacy */}
+          {/* Ring 4 (Satellite) - Specialized Performance & UX */}
           <div className="ring duration-40 delay-1s" style={{ width: "630px", height: "630px" }}>
             <div className="planet p-1" data-tooltip="Delphi">
-              <img src="https://cdn.simpleicons.org/embarcadero/ffffff" alt="Delphi" />
+              <img src="/tech-logos/delphi.png" alt="Delphi" style={{ width: "24px" }} />
             </div>
             <div className="planet p-2" data-tooltip="Claude AI">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
-                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                <circle cx="12" cy="12" r="3" />
-              </svg>
+              <img src="/tech-logos/claude.png" alt="Claude" style={{ width: "24px" }} />
+            </div>
+            <div className="planet p-3" data-tooltip="UX/UI">
+              <img src="/tech-logos/ux-ui.png" alt="UX/UI" style={{ width: "24px" }} />
             </div>
             <div className="planet p-4" data-tooltip="REST API">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
                 <path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.1-3.9-4.5-.4-3.5-3.4-6-6.9-6-2.5 0-4.6 1.3-5.8 3.2C3.2 7.8 1.5 9.4 1.5 11.5c0 2.5 2 4.5 4.5 4.5" />
-                <path d="M12 13a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-                <path d="M12 11v2M12 17v2M9.5 12.5l1.5 1.5M13 16l1.5 1.5M8 15h2M14 15h2M9.5 17.5l1.5-1.5M13 14l1.5-1.5" />
+                <path d="M12 11h.01M16 11h.01M8 11h.01M12 15h.01M16 15h.01M8 15h.01" strokeWidth="3" strokeLinecap="round" />
               </svg>
             </div>
-            <div className="planet p-5" data-tooltip="Google Ads">
-              <img src="https://cdn.simpleicons.org/googleads/ffffff" alt="Google Ads" />
+            <div className="planet p-5" data-tooltip="Google Analytics">
+              <img src="https://cdn.simpleicons.org/googleanalytics/ffffff" alt="GA" />
             </div>
-            <div className="planet p-7" data-tooltip="Meta Ads">
-              <img src="https://cdn.simpleicons.org/meta/ffffff" alt="Meta Ads" />
+            <div className="planet p-6" data-tooltip="GTM">
+              <img src="https://cdn.simpleicons.org/googletagmanager/ffffff" alt="GTM" />
+            </div>
+            <div className="planet p-7" data-tooltip="Google Ads">
+              <img src="https://cdn.simpleicons.org/googleads/ffffff" alt="GAds" />
+            </div>
+            <div className="planet p-8" data-tooltip="Meta Ads">
+              <img src="https://cdn.simpleicons.org/meta/ffffff" alt="Meta" />
             </div>
           </div>
         </div>

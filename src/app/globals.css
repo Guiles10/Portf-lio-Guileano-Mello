@@ -462,8 +462,8 @@ nav.scrolled {
 }
 
 .stack-item {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -472,9 +472,8 @@ nav.scrolled {
   transition: all 0.3s;
 }
 
-.stack-item img { width: 32px; height: 32px; filter: grayscale(1) opacity(0.5); transition: 0.3s; }
-.stack-item:hover { border-color: var(--primary); background: rgba(255,107,0,0.03); }
-.stack-item:hover img { filter: grayscale(0) opacity(1); }
+.stack-item img { width: 32px; height: 32px; transition: 0.3s; }
+.stack-item:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
 .stack-name { font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-muted); }
 
 .soft-skills-grid {
