@@ -56,21 +56,37 @@ export default function Stack() {
         <h2 className="section-title section-header">Minhas Skills.</h2>
 
         {/* Intuitive Switcher */}
-        <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: "1rem" }}>
+        <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: "3rem" }}>
           <div className="skills-nav">
             <button 
               className={`skill-tab ${activeTab === "hard" ? "active" : ""}`}
               onClick={() => setActiveTab("hard")}
+              style={{ position: "relative", zIndex: 10 }}
             >
-              <Code2 size={16} />
-              HARD SKILLS
+              {activeTab === "hard" && (
+                <motion.div 
+                  layoutId="active-pill"
+                  className="active-pill"
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+              <Code2 size={16} style={{ position: "relative", zIndex: 11 }} />
+              <span style={{ position: "relative", zIndex: 11 }}>HARD SKILLS</span>
             </button>
             <button 
               className={`skill-tab ${activeTab === "soft" ? "active" : ""}`}
               onClick={() => setActiveTab("soft")}
+              style={{ position: "relative", zIndex: 10 }}
             >
-              <BrainCircuit size={16} />
-              SOFT SKILLS
+              {activeTab === "soft" && (
+                <motion.div 
+                  layoutId="active-pill"
+                  className="active-pill"
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+              <BrainCircuit size={16} style={{ position: "relative", zIndex: 11 }} />
+              <span style={{ position: "relative", zIndex: 11 }}>SOFT SKILLS</span>
             </button>
           </div>
         </div>

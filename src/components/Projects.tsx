@@ -3,6 +3,36 @@ import Reveal from "./Reveal";
 
 const REALIZADOS = [
   {
+    title: "Guia AquiTem",
+    desc: (
+      <>
+        <div style={{ marginBottom: "1rem" }}>
+          <span className="mono" style={{ color: "var(--primary)", fontSize: "0.8rem", display: "block" }}>
+            // FRONT-END & FULLSTACK SAAS
+          </span>
+          <strong>Ecossistema SaaS Multi-tenant</strong> projetado para conectar empresas e consumidores locais. 
+          Implementação robusta de segurança com controle de acesso baseado em funções (<strong>User, ADM, Master</strong>), 
+          garantindo integridade e privacidade de dados essenciais (RBAC & Auth).
+        </div>
+        
+        <div style={{ borderLeft: "2px solid var(--primary)", paddingLeft: "1rem", marginTop: "1rem" }}>
+          <span className="mono" style={{ fontSize: "0.80rem", opacity: 0.8 }}>SISTEMA CRUD COMPLETO:</span>
+          <ul style={{ listStyle: "none", padding: 0, margin: "0.5rem 0", fontSize: "0.8rem", color: "var(--text-muted)" }}>
+            <li>→ Lucid Icons (Interface)</li>
+            <li>→ Framer Motion (Animações)</li>
+            <li>→ Axios & TanStack Query (Data Fetching)</li>
+            <li>→ React Hook Form & Zod (Validação)</li>
+            <li>→ Sharp (Otimização de Imagens)</li>
+          </ul>
+        </div>
+      </>
+    ),
+    tags: ["Nest.js", "Next JS", "Prisma", "Supabase", "TypeScript"],
+    img: "/projects/guia_aquitem.png",
+    github: "https://github.com/Guiles10",
+    demo: "#"
+  },
+  {
     title: "Search API",
     desc: (
       <>
