@@ -108,13 +108,30 @@ export default function Stack() {
                     <div className="stack-grid">
                       {TECH_STACK.filter((tech) => tech.category === cat.id).map((tech) => (
                         <div className="stack-item" key={tech.name}>
-                          <img
-                            src={`https://cdn.simpleicons.org/${tech.icon}/ffffff`}
-                            alt={tech.name}
-                            onError={(e) => {
-                              e.currentTarget.style.display = "none";
-                            }}
-                          />
+                          {tech.name.includes("Claude") ? (
+                            <div className="custom-stack-icon">
+                              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
+                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                                <circle cx="12" cy="12" r="3" />
+                              </svg>
+                            </div>
+                          ) : tech.name.includes("APIs REST") ? (
+                            <div className="custom-stack-icon">
+                              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
+                                <path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.1-3.9-4.5-.4-3.5-3.4-6-6.9-6-2.5 0-4.6 1.3-5.8 3.2C3.2 7.8 1.5 9.4 1.5 11.5c0 2.5 2 4.5 4.5 4.5" />
+                                <path d="M12 11h.01M16 11h.01M8 11h.01M12 15h.01M16 15h.01M8 15h.01" strokeWidth="3" strokeLinecap="round" />
+                                <path d="M6 12l2 2 4-4 4 4 2-2" />
+                              </svg>
+                            </div>
+                          ) : (
+                            <img
+                              src={`https://cdn.simpleicons.org/${tech.icon}/ffffff`}
+                              alt={tech.name}
+                              onError={(e) => {
+                                e.currentTarget.style.display = "none";
+                              }}
+                            />
+                          )}
                           <span className="stack-name">{tech.name}</span>
                         </div>
                       ))}

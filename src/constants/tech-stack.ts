@@ -33,8 +33,9 @@ export const TECH_STACK: Technology[] = [
 
   // Tools & Specialties
   { name: "AWS", icon: "amazonwebservices", glow: "rgba(255, 153, 0, 0.2)", category: "Tools" },
-  { name: "Claude / AI", icon: "anthropic", glow: "rgba(217, 119, 87, 0.2)", category: "Tools" },
+  { name: "Claude / IA", icon: "anthropic", glow: "rgba(217, 119, 87, 0.2)", category: "Tools" },
+  { name: "Sass / CSS", icon: "sass", glow: "rgba(204, 102, 153, 0.2)", category: "Tools" },
   { name: "OpenAI", icon: "openai", glow: "rgba(116, 170, 156, 0.2)", category: "Tools" },
   { name: "Delphi", icon: "embarcadero", glow: "rgba(165, 30, 36, 0.2)", category: "Tools" },
-  { name: "FireBird", icon: "sqlite", glow: "rgba(0, 59, 115, 0.2)", category: "Tools" },
+  { name: "APIs REST", icon: "postman", glow: "rgba(255, 108, 55, 0.2)", category: "Backend" },
 ];

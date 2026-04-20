@@ -71,7 +71,7 @@ export default function Orbit() {
               <img src="https://cdn.simpleicons.org/docker/ffffff" alt="Docker" />
             </div>
             <div className="planet p-2" data-tooltip="AWS">
-              <img src="https://cdn.simpleicons.org/amazonaws/ffffff" alt="AWS" />
+              <img src="https://cdn.simpleicons.org/amazonwebservices/ffffff" alt="AWS" />
             </div>
             <div className="planet p-3" data-tooltip="Tailwind CSS">
               <img src="https://cdn.simpleicons.org/tailwindcss/ffffff" alt="Tailwind CSS" />
@@ -79,8 +79,8 @@ export default function Orbit() {
             <div className="planet p-5" data-tooltip="Git">
               <img src="https://cdn.simpleicons.org/git/ffffff" alt="Git" />
             </div>
-            <div className="planet p-6" data-tooltip="Figma">
-              <img src="https://cdn.simpleicons.org/figma/ffffff" alt="Figma" />
+            <div className="planet p-6" data-tooltip="Sass">
+              <img src="https://cdn.simpleicons.org/sass/ffffff" alt="Sass" />
             </div>
             <div className="planet p-7" data-tooltip="Vercel">
               <img src="https://cdn.simpleicons.org/vercel/ffffff" alt="Vercel" />
@@ -95,13 +95,20 @@ export default function Orbit() {
             <div className="planet p-1" data-tooltip="Delphi">
               <img src="https://cdn.simpleicons.org/embarcadero/ffffff" alt="Delphi" />
             </div>
-            <div className="planet p-2" data-tooltip="Vite">
-              <img src="https://cdn.simpleicons.org/vite/ffffff" alt="Vite" />
+            <div className="planet p-2" data-tooltip="Claude AI">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
             </div>
-            <div className="planet p-4" data-tooltip="Vue.js">
-              <img src="https://cdn.simpleicons.org/vuedotjs/ffffff" alt="Vue.js" />
+            <div className="planet p-4" data-tooltip="REST API">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
+                <path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.1-3.9-4.5-.4-3.5-3.4-6-6.9-6-2.5 0-4.6 1.3-5.8 3.2C3.2 7.8 1.5 9.4 1.5 11.5c0 2.5 2 4.5 4.5 4.5" />
+                <path d="M12 13a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                <path d="M12 11v2M12 17v2M9.5 12.5l1.5 1.5M13 16l1.5 1.5M8 15h2M14 15h2M9.5 17.5l1.5-1.5M13 14l1.5-1.5" />
+              </svg>
             </div>
-            <div className="planet p-6" data-tooltip="Google Ads">
+            <div className="planet p-5" data-tooltip="Google Ads">
               <img src="https://cdn.simpleicons.org/googleads/ffffff" alt="Google Ads" />
             </div>
             <div className="planet p-7" data-tooltip="Meta Ads">
