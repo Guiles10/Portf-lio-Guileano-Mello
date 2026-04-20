@@ -37,7 +37,7 @@ export default function About() {
           </div>
           <div className="about-content">
             <h2 className="section-title" style={{ marginBottom: "2rem" }}>
-              Híbrido por Natureza. Resultados Orientados por Dados & Código.
+              Resultados Orientados por Códigos & Dados
             </h2>
             <p
               style={{
@@ -47,9 +47,20 @@ export default function About() {
                 lineHeight: "1.8"
               }}
             >
-              Integro tecnologia e aquisição de clientes para gerar crescimento escalável. 
-              Atuo desde a arquitetura técnica até a otimização de campanhas em Google Ads e Meta Ads, 
-              garantindo eficiência em toda a jornada do usuário — do clique à conversão.
+              Atuo como desenvolvedor web focado em construir soluções digitais orientadas a performance e crescimento. 
+              Trabalho desde a arquitetura técnica até a implementação de aplicações otimizadas para conversão, 
+              garantindo eficiência, velocidade e uma experiência sólida ao usuário.
+            </p>
+            <p
+              style={{
+                color: "var(--text-muted)",
+                marginBottom: "1.5rem",
+                fontSize: "1.1rem",
+                lineHeight: "1.8"
+              }}
+            >
+              Complemento minha atuação com gestão estratégica de tráfego pago, utilizando Google Ads e Meta Ads 
+              como ferramentas para potencializar resultados e validar decisões com dados reais.
             </p>
             <p
               style={{
@@ -59,9 +70,9 @@ export default function About() {
                 lineHeight: "1.8"
               }}
             >
-              Minha proposta de valor está em reduzir o gap entre tecnologia e marketing, 
-              atuando como um profissional capaz de construir, medir e escalar resultados digitais. 
-              Unindo inteligência tecnológica com visão de ROI real.
+              Minha proposta de valor está em reduzir a distância entre desenvolvimento e marketing, 
+              criando sistemas que não apenas funcionam bem, mas que também geram impacto direto no crescimento do negócio 
+              — com foco em mensuração, escalabilidade e ROI consistente.
             </p>
             <div className="metrics-list">
               <div className="metric-item">

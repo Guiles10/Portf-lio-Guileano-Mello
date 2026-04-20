@@ -1,49 +1,87 @@
+"use client";
+
 import Reveal from "./Reveal";
 
 export default function Education() {
-  const education = [
-    {
-      school: "Kenzie Academy",
-      course: "Desenvolvimento Full Stack",
-      period: "Junho/2022 – Julho/2023",
-      description: "Foco intensivo em tecnologias modernas de desenvolvimento web (React, Node, TypeScript).",
-    },
-    {
-      school: "Universidade Federal de Santa Maria (UFSM)",
-      course: "Zootecnia",
-      period: "Março/2010 – Agosto/2014",
-      description: "Formação acadêmica inicial com base científica e analítica.",
-    },
-  ];
-
   const certifications = [
     "Comunidade Sobral de Tráfego Pago",
     "Fórmula de Lançamento",
-    "AWS Certified Foundations",
+    "AWS (Cloud Foundations & Solutions)",
     "Delphi e FireBird Básico",
   ];
 
   return (
     <Reveal>
       <section id="formacao" className="container">
-        <span className="mono section-label">// 005 — FORMAÇÃO & CERTIFICAÇÕES</span>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", marginTop: "2rem" }}>
-          <div>
-            <h3 className="section-title" style={{ fontSize: "1.8rem", marginBottom: "2rem" }}>Educação.</h3>
-            {education.map((edu, idx) => (
-              <div key={idx} style={{ marginBottom: "2rem", borderLeft: "1px solid var(--border)", paddingLeft: "1.5rem" }}>
-                <h4 style={{ fontSize: "1.1rem", color: "var(--text-main)" }}>{edu.school}</h4>
-                <p style={{ color: "var(--primary)", fontSize: "0.9rem", fontWeight: "bold" }}>{edu.course}</p>
-                <span className="mono" style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>{edu.period}</span>
+        <span className="mono section-label">// 005 — FORMAÇÃO & ESPECIALIZAÇÕES</span>
+        
+        <div className="education-column-stack" style={{ 
+          display: "flex", 
+          flexDirection: "column",
+          gap: "4rem", 
+          marginTop: "3rem" 
+        }}>
+          {/* Academia */}
+          <div className="edu-column">
+            <h3 className="section-title" style={{ fontSize: "1.8rem", marginBottom: "2rem" }}>
+              Formação Acadêmica
+            </h3>
+            <div className="soft-skill-card" style={{ padding: "2.5rem" }}>
+              <div className="soft-skill-icon-wrapper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
               </div>
-            ))}
+              <h4 className="soft-skill-title" style={{ fontSize: "1.4rem" }}>Desenvolvimento Full Stack</h4>
+              <p className="mono" style={{ color: "var(--primary)", marginBottom: "1rem", fontSize: "0.85rem" }}>
+                Kenzie Academy Brasil
+              </p>
+              <p className="soft-skill-desc" style={{ marginBottom: "1.5rem" }}>
+                Junho/2022 – Julho/2023
+              </p>
+              <p className="soft-skill-desc" style={{ marginBottom: "2rem" }}>
+                Formação intensiva com mais de 2.000 horas de código, focada em tecnologias do ecossistema JavaScript (React, Node.js, TypeScript) e arquitetura de sistemas.
+              </p>
+
+              {/* Certificate Image - Repositioned Below Text */}
+              <div 
+                style={{
+                  width: "100%",
+                  maxWidth: "500px",
+                  height: "auto",
+                  border: "1px solid var(--border)",
+                  borderRadius: "8px",
+                  overflow: "hidden",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                  marginTop: "1rem"
+                }}
+                className="certificate-thumbnail-inline"
+                onClick={() => window.open('/certificates/kenzie_fullstack.jfif', '_blank')}
+              >
+                <img 
+                  src="/certificates/kenzie_fullstack.jfif" 
+                  alt="Certificado Kenzie Full Stack" 
+                  style={{ width: "100%", display: "block", filter: "brightness(0.9)" }} 
+                />
+              </div>
+            </div>
           </div>
-          <div>
-            <h3 className="section-title" style={{ fontSize: "1.8rem", marginBottom: "2rem" }}>Certificações.</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+
+          {/* Certificações */}
+          <div className="edu-column">
+            <h3 className="section-title" style={{ fontSize: "1.8rem", marginBottom: "2rem" }}>
+              Certificações Adicionais
+            </h3>
+            <div className="cert-list" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1rem" }}>
               {certifications.map((cert, idx) => (
-                <div key={idx} className="stack-item" style={{ height: "auto", padding: "10px 20px", display: "inline-flex", alignItems: "center", border: "1px solid var(--border)", borderRadius: "4px" }}>
-                  <span className="mono" style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>{cert}</span>
+                <div key={idx} className="contact-link" style={{ cursor: "default", justifyContent: "flex-start", width: "100%", background: "rgba(255,255,255,0.02)", border: "1px solid var(--border)", padding: "1.2rem" }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                  <span style={{ fontSize: "0.95rem" }}>{cert}</span>
                 </div>
               ))}
             </div>

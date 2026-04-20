@@ -27,51 +27,85 @@ export default function Orbit() {
             <path d="M250,50 L250,110" fill="none" className="synergy-line" />
           </svg>
 
-          {/* Ring 1 (Inner) - Frameworks */}
-          <div className="ring ring-1">
+          {/* Ring 1 (Inner) - Core Frameworks */}
+          <div className="ring ring-1 duration-15">
             <div className="planet p-1" data-tooltip="React">
               <img src="https://cdn.simpleicons.org/react/ffffff" alt="React" />
             </div>
-            <div className="planet p-2" data-tooltip="Next.js">
+            <div className="planet p-3" data-tooltip="Next.js">
               <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js" />
             </div>
-            <div className="planet p-3" data-tooltip="TypeScript">
+            <div className="planet p-5" data-tooltip="TypeScript">
               <img src="https://cdn.simpleicons.org/typescript/ffffff" alt="TypeScript" />
             </div>
-            <div className="planet p-4" data-tooltip="JavaScript">
+            <div className="planet p-7" data-tooltip="JavaScript">
               <img src="https://cdn.simpleicons.org/javascript/ffffff" alt="JavaScript" />
             </div>
           </div>
 
           {/* Ring 2 (Middle) - Backend & Data */}
-          <div className="ring ring-2">
+          <div className="ring ring-2 duration-25 delay-2s">
             <div className="planet p-1" data-tooltip="Node.js">
               <img src="https://cdn.simpleicons.org/nodedotjs/ffffff" alt="Node.js" />
             </div>
-            <div className="planet p-2" data-tooltip="CSS3">
-              <img src="https://cdn.simpleicons.org/css3/ffffff" alt="CSS3" />
+            <div className="planet p-2" data-tooltip="Python">
+              <img src="https://cdn.simpleicons.org/python/ffffff" alt="Python" />
             </div>
-            <div className="planet p-3" data-tooltip="PostgreSQL">
+            <div className="planet p-4" data-tooltip="PostgreSQL">
               <img src="https://cdn.simpleicons.org/postgresql/ffffff" alt="PostgreSQL" />
             </div>
-            <div className="planet p-4" data-tooltip="NestJS">
+            <div className="planet p-5" data-tooltip="Prisma">
+              <img src="https://cdn.simpleicons.org/prisma/ffffff" alt="Prisma" />
+            </div>
+            <div className="planet p-7" data-tooltip="NestJS">
               <img src="https://cdn.simpleicons.org/nestjs/ffffff" alt="NestJS" />
+            </div>
+            <div className="planet p-8" data-tooltip="Django">
+              <img src="https://cdn.simpleicons.org/django/ffffff" alt="Django" />
             </div>
           </div>
 
-          {/* Ring 3 (Outer) - Growth & Ads */}
-          <div className="ring ring-3">
-            <div className="planet p-1" data-tooltip="Google Ads">
-              <img src="https://cdn.simpleicons.org/googleads/ffffff" alt="Google Ads" />
+          {/* Ring 3 (Outer) - Tools & Infra */}
+          <div className="ring ring-3 duration-35 delay-4s">
+            <div className="planet p-1" data-tooltip="Docker">
+              <img src="https://cdn.simpleicons.org/docker/ffffff" alt="Docker" />
             </div>
-            <div className="planet p-2" data-tooltip="Meta Ads">
-              <img src="https://cdn.simpleicons.org/meta/ffffff" alt="Meta Ads" />
-            </div>
-            <div className="planet p-3" data-tooltip="AWS">
+            <div className="planet p-2" data-tooltip="AWS">
               <img src="https://cdn.simpleicons.org/amazonaws/ffffff" alt="AWS" />
             </div>
-            <div className="planet p-4" data-tooltip="OpenAI">
+            <div className="planet p-3" data-tooltip="Tailwind CSS">
+              <img src="https://cdn.simpleicons.org/tailwindcss/ffffff" alt="Tailwind CSS" />
+            </div>
+            <div className="planet p-5" data-tooltip="Git">
+              <img src="https://cdn.simpleicons.org/git/ffffff" alt="Git" />
+            </div>
+            <div className="planet p-6" data-tooltip="Figma">
+              <img src="https://cdn.simpleicons.org/figma/ffffff" alt="Figma" />
+            </div>
+            <div className="planet p-7" data-tooltip="Vercel">
+              <img src="https://cdn.simpleicons.org/vercel/ffffff" alt="Vercel" />
+            </div>
+            <div className="planet p-8" data-tooltip="OpenAI">
               <img src="https://cdn.simpleicons.org/openai/ffffff" alt="OpenAI" />
+            </div>
+          </div>
+
+          {/* Ring 4 (Satellite) - Specialized & Legacy */}
+          <div className="ring duration-40 delay-1s" style={{ width: "630px", height: "630px" }}>
+            <div className="planet p-1" data-tooltip="Delphi">
+              <img src="https://cdn.simpleicons.org/embarcadero/ffffff" alt="Delphi" />
+            </div>
+            <div className="planet p-2" data-tooltip="Vite">
+              <img src="https://cdn.simpleicons.org/vite/ffffff" alt="Vite" />
+            </div>
+            <div className="planet p-4" data-tooltip="Vue.js">
+              <img src="https://cdn.simpleicons.org/vuedotjs/ffffff" alt="Vue.js" />
+            </div>
+            <div className="planet p-6" data-tooltip="Google Ads">
+              <img src="https://cdn.simpleicons.org/googleads/ffffff" alt="Google Ads" />
+            </div>
+            <div className="planet p-7" data-tooltip="Meta Ads">
+              <img src="https://cdn.simpleicons.org/meta/ffffff" alt="Meta Ads" />
             </div>
           </div>
         </div>

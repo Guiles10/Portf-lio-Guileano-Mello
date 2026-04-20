@@ -7,6 +7,7 @@ import ExperienceTimeline from "@/components/ExperienceTimeline";
 import Expertise from "@/components/Expertise";
 import Projects from "@/components/Projects";
 import Stack from "@/components/Stack";
+import Education from "@/components/Education";
 import Orbit from "@/components/Orbit";
 import ResultsCounters from "@/components/ResultsCounters";
 import Contact from "@/components/Contact";
@@ -42,6 +43,9 @@ export default function Home() {
       <Orbit />
       
       <Stack />
+      
+      <div className="section-divider" />
+      <Education />
       
       <div className="section-divider" />
       <ResultsCounters />

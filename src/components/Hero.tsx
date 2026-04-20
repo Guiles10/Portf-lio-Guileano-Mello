@@ -59,7 +59,7 @@ export default function Hero() {
           <span style={{ color: "var(--primary)", fontWeight: "bold" }}>Full Stack Developer</span> | Especialista em Performance Digital & Tráfego Pago
         </motion.p>
 
-        <div className="hero-ctas reveal delay-2 active" style={{ marginTop: "3rem" }}>
+        <div className="hero-ctas reveal delay-2 active" style={{ marginTop: "2rem" }}>
           <MagneticButton>
             <Link href="#projetos" className="btn btn-primary">
               Ver Experiência
