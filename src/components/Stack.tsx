@@ -20,7 +20,7 @@ export default function Stack() {
     {
       title: "Comunicação Técnica",
       icon: <MessageSquare size={24} />,
-      desc: "Habilidade de traduzir conceitos complexos de programação e marketing para diferentes públicos, facilitando o alinhamento de expectativas."
+      desc: "Habilidade de traduzir conceitos e lógicas de programação e marketing para diferentes públicos, facilitando a comunicação o entendimento e o alinhamento de expectativas."
     },
     {
       title: "Foco em Resultados (ROAS)",
@@ -30,17 +30,17 @@ export default function Stack() {
     {
       title: "Resolução de Problemas",
       icon: <Zap size={24} />,
-      desc: "Abordagem analítica e criativa para debugar códigos, otimizar processos internos e superar gargalos em funis de conversão."
+      desc: "Abordagem analítica e criativa para solucionar problemas e bugs, explorando diversas variações e cenários possíveis com foco em prever consequências. Atuo em colaboração com a equipe para validar ideias, integrando IAs para lapidar e otimizar as soluções finais."
     },
     {
-      title: "Liderança & Mentoria",
+      title: "Colaboração & Adaptabilidade",
       icon: <Users size={24} />,
-      desc: "Experiência prática em guiar desenvolvedores e estudantes, promovendo o aprendizado coletivo e a correção construtiva de projetos."
+      desc: "Focado em um trabalho de equipe fluido, possuo facilidade em seguir diretrizes, proatividade para questionar e contribuir com opiniões construtivas. Ajusto-me rapidamente a qualquer ambiente, sendo capaz de liderar e organizar times quando necessário."
     },
     {
-      title: "Adaptabilidade Híbrida",
-      icon: <Layers size={24} />,
-      desc: "Capacidade de transitar entre o desenvolvimento full stack e o marketing digital de alta performance com agilidade."
+      title: "Trabalho em Equipe",
+      icon: <Users size={24} />,
+      desc: "Acredito que os melhores resultados nascem da sinergia coletiva. Priorizo a troca de experiências e o suporte mútuo, garantindo um ambiente de trabalho harmonioso onde o sucesso do time é o objetivo principal."
     },
     {
       title: "Confiabilidade & Entrega",

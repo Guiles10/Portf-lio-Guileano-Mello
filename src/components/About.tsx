@@ -8,33 +8,6 @@ export default function About() {
       <section id="sobre" className="container">
         <span className="mono section-label">// 001 — SOBRE MIM</span>
         <div className="about-grid">
-          <div className="about-photo">
-            <div className="photo-inner">
-              <img 
-                src="https://media.licdn.com/dms/image/v2/C4D03AQE1f_OQ_O_O_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1651515151?e=1715151200&v=beta&t=example" 
-                alt="Guileano"
-                style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.8 }}
-                onError={(e) => {
-                  e.currentTarget.style.display = "none";
-                  e.currentTarget.parentElement?.querySelector('svg')?.setAttribute("style", "display: block");
-                }}
-              />
-              <svg
-                width="120"
-                height="120"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--text-muted)"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                style={{ display: "none" }}
-              >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-          </div>
           <div className="about-content">
             <h2 className="section-title" style={{ marginBottom: "2rem" }}>
               Resultados Orientados por Códigos & Dados
@@ -90,6 +63,34 @@ export default function About() {
                 <div className="metric-line"></div>
                 <span className="metric-val">+50%</span>
               </div>
+            </div>
+          </div>
+
+          <div className="about-photo">
+            <div className="photo-inner">
+              <img 
+                src="https://media.licdn.com/dms/image/v2/C4D03AQE1f_OQ_O_O_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1651515151?e=1715151200&v=beta&t=example" 
+                alt="Guileano"
+                style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.8 }}
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                  e.currentTarget.parentElement?.querySelector('svg')?.setAttribute("style", "display: block");
+                }}
+              />
+              <svg
+                width="120"
+                height="120"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--text-muted)"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                style={{ display: "none" }}
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
             </div>
           </div>
         </div>
