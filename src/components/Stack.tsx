@@ -20,7 +20,7 @@ export default function Stack() {
     {
       title: "Comunicação Técnica",
       icon: <MessageSquare size={24} />,
-      desc: "Habilidade de traduzir conceitos complexos de programação e marketing para diferentes públicos, facilitando o alinhamento de expectativas."
+      desc: "Habilidade de traduzir conceitos e lógicas de programação e marketing para diferentes públicos, facilitando a comunicação o entendimento e o alinhamento de expectativas."
     },
     {
       title: "Foco em Resultados (ROAS)",
@@ -30,17 +30,17 @@ export default function Stack() {
     {
       title: "Resolução de Problemas",
       icon: <Zap size={24} />,
-      desc: "Abordagem analítica e criativa para debugar códigos, otimizar processos internos e superar gargalos em funis de conversão."
+      desc: "Abordagem analítica e criativa para solucionar problemas e bugs, explorando diversas variações e cenários possíveis com foco em prever consequências. Atuo em colaboração com a equipe para validar ideias, integrando IAs para lapidar e otimizar as soluções finais."
     },
     {
-      title: "Liderança & Mentoria",
+      title: "Colaboração & Adaptabilidade",
       icon: <Users size={24} />,
-      desc: "Experiência prática em guiar desenvolvedores e estudantes, promovendo o aprendizado coletivo e a correção construtiva de projetos."
+      desc: "Focado em um trabalho de equipe fluido, possuo facilidade em seguir diretrizes, proatividade para questionar e contribuir com opiniões construtivas. Ajusto-me rapidamente a qualquer ambiente, sendo capaz de liderar e organizar times quando necessário."
     },
     {
-      title: "Adaptabilidade Híbrida",
-      icon: <Layers size={24} />,
-      desc: "Capacidade de transitar entre o desenvolvimento full stack e o marketing digital de alta performance com agilidade."
+      title: "Trabalho em Equipe",
+      icon: <Users size={24} />,
+      desc: "Acredito que os melhores resultados nascem da sinergia coletiva. Priorizo a troca de experiências e o suporte mútuo, garantindo um ambiente de trabalho harmonioso onde o sucesso do time é o objetivo principal."
     },
     {
       title: "Confiabilidade & Entrega",
@@ -56,21 +56,37 @@ export default function Stack() {
         <h2 className="section-title section-header">Minhas Skills.</h2>
 
         {/* Intuitive Switcher */}
-        <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: "1rem" }}>
+        <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: "3rem" }}>
           <div className="skills-nav">
             <button 
               className={`skill-tab ${activeTab === "hard" ? "active" : ""}`}
               onClick={() => setActiveTab("hard")}
+              style={{ position: "relative", zIndex: 10 }}
             >
-              <Code2 size={16} />
-              HARD SKILLS
+              {activeTab === "hard" && (
+                <motion.div 
+                  layoutId="active-pill"
+                  className="active-pill"
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+              <Code2 size={16} style={{ position: "relative", zIndex: 11 }} />
+              <span style={{ position: "relative", zIndex: 11 }}>HARD SKILLS</span>
             </button>
             <button 
               className={`skill-tab ${activeTab === "soft" ? "active" : ""}`}
               onClick={() => setActiveTab("soft")}
+              style={{ position: "relative", zIndex: 10 }}
             >
-              <BrainCircuit size={16} />
-              SOFT SKILLS
+              {activeTab === "soft" && (
+                <motion.div 
+                  layoutId="active-pill"
+                  className="active-pill"
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+              <BrainCircuit size={16} style={{ position: "relative", zIndex: 11 }} />
+              <span style={{ position: "relative", zIndex: 11 }}>SOFT SKILLS</span>
             </button>
           </div>
         </div>
@@ -92,13 +108,53 @@ export default function Stack() {
                     <div className="stack-grid">
                       {TECH_STACK.filter((tech) => tech.category === cat.id).map((tech) => (
                         <div className="stack-item" key={tech.name}>
-                          <img
-                            src={`https://cdn.simpleicons.org/${tech.icon}/ffffff`}
-                            alt={tech.name}
-                            onError={(e) => {
-                              e.currentTarget.style.display = "none";
-                            }}
-                          />
+                          {tech.name === "AWS" ? (
+                            <div className="custom-stack-icon">
+                              <img src="/tech-logos/aws.png" alt="AWS" style={{ width: "32px" }} />
+                            </div>
+                          ) : tech.name === "OpenAI" ? (
+                            <div className="custom-stack-icon">
+                              <img src="/tech-logos/openai.png" alt="OpenAI" style={{ width: "32px" }} />
+                            </div>
+                          ) : tech.name === "CSS" ? (
+                            <div className="custom-stack-icon">
+                              <img src="/tech-logos/css.png" alt="CSS" style={{ width: "32px" }} />
+                            </div>
+                          ) : tech.name === "Sass / CSS" ? (
+                            <div className="custom-stack-icon">
+                              <img src="/tech-logos/sass.png" alt="Sass" style={{ width: "32px", filter: "brightness(0) invert(1)" }} />
+                            </div>
+                          ) : tech.name === "Delphi" ? (
+                            <div className="custom-stack-icon">
+                              <img src="/tech-logos/delphi.png" alt="Delphi" style={{ width: "32px" }} />
+                            </div>
+                          ) : tech.name.includes("Claude") ? (
+                            <div className="custom-stack-icon">
+                              <img src="/tech-logos/claude.png" alt="Claude" style={{ width: "32px", borderRadius: "4px" }} />
+                            </div>
+                          ) : tech.name.includes("APIs REST") ? (
+                            <div className="custom-stack-icon">
+                              <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                                <path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.1-3.9-4.5-.4-3.5-3.4-6-6.9-6-2.5 0-4.6 1.3-5.8 3.2C3.2 7.8 1.5 9.4 1.5 11.5c0 2.5 2 4.5 4.5 4.5" />
+                                <path d="M12 11h.01M16 11h.01M8 11h.01M12 15h.01M16 15h.01M8 15h.01" strokeWidth="3" strokeLinecap="round" />
+                                <path d="M6 12l2 2 4-4 4 4 2-2" />
+                              </svg>
+                            </div>
+                          ) : tech.name === "UX/UI" ? (
+                            <div className="custom-stack-icon">
+                              <img src="/tech-logos/ux-ui.png" alt="UX/UI" style={{ width: "32px" }} />
+                            </div>
+                          ) : (
+                            <img
+                              src={`https://cdn.simpleicons.org/${tech.icon}/ffffff`}
+                              alt={tech.name}
+                              onError={(e) => {
+                                e.currentTarget.style.display = "none";
+                                // Fallback icon if simpleicons fails
+                                e.currentTarget.parentElement?.querySelector('.fallback-icon')?.setAttribute("style", "display: block");
+                              }}
+                            />
+                          )}
                           <span className="stack-name">{tech.name}</span>
                         </div>
                       ))}

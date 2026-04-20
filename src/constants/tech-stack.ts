@@ -12,8 +12,9 @@ export const TECH_STACK: Technology[] = [
   { name: "JavaScript", icon: "javascript", glow: "rgba(247, 223, 30, 0.2)", category: "Frontend" },
   { name: "TypeScript", icon: "typescript", glow: "rgba(49, 120, 198, 0.2)", category: "Frontend" },
   { name: "Tailwind CSS", icon: "tailwindcss", glow: "rgba(56, 189, 248, 0.2)", category: "Frontend" },
-  { name: "HTML5", icon: "html5", glow: "rgba(227, 79, 38, 0.2)", category: "Frontend" },
-  { name: "CSS3", icon: "css3", glow: "rgba(21, 114, 182, 0.2)", category: "Frontend" },
+  { name: "Sass / CSS", icon: "sass", glow: "rgba(204, 102, 153, 0.2)", category: "Frontend" },
+  { name: "HTML", icon: "html5", glow: "rgba(227, 79, 38, 0.2)", category: "Frontend" },
+  { name: "CSS", icon: "css3", glow: "rgba(21, 114, 182, 0.2)", category: "Frontend" },
 
   // Backend
   { name: "Node.js", icon: "nodedotjs", glow: "rgba(104, 160, 99, 0.2)", category: "Backend" },
@@ -22,19 +23,20 @@ export const TECH_STACK: Technology[] = [
   { name: "PostgreSQL", icon: "postgresql", glow: "rgba(51, 103, 145, 0.2)", category: "Backend" },
   { name: "APIs REST", icon: "postman", glow: "rgba(255, 108, 55, 0.2)", category: "Backend" },
   { name: "Docker", icon: "docker", glow: "rgba(0, 144, 204, 0.2)", category: "Backend" },
-  { name: "Git", icon: "git", glow: "rgba(240, 80, 50, 0.2)", category: "Backend" },
   { name: "CI/CD", icon: "githubactions", glow: "rgba(32, 136, 255, 0.2)", category: "Backend" },
 
   // Performance & Ads
   { name: "Google Ads", icon: "googleads", glow: "rgba(255, 107, 0, 0.3)", category: "Performance" },
   { name: "Meta Ads", icon: "meta", glow: "rgba(6, 104, 230, 0.2)", category: "Performance" },
   { name: "Analytics", icon: "googleanalytics", glow: "rgba(244, 180, 0, 0.2)", category: "Performance" },
+  { name: "Google Tag Manager", icon: "googletagmanager", glow: "rgba(36, 129, 204, 0.2)", category: "Performance" },
   { name: "CRO / Funis", icon: "airtable", glow: "rgba(24, 160, 240, 0.2)", category: "Performance" },
 
   // Tools & Specialties
+  { name: "Git", icon: "git", glow: "rgba(240, 80, 50, 0.2)", category: "Tools" },
   { name: "AWS", icon: "amazonwebservices", glow: "rgba(255, 153, 0, 0.2)", category: "Tools" },
-  { name: "Claude / AI", icon: "anthropic", glow: "rgba(217, 119, 87, 0.2)", category: "Tools" },
+  { name: "Claude / IA", icon: "anthropic", glow: "rgba(217, 119, 87, 0.2)", category: "Tools" },
   { name: "OpenAI", icon: "openai", glow: "rgba(116, 170, 156, 0.2)", category: "Tools" },
   { name: "Delphi", icon: "embarcadero", glow: "rgba(165, 30, 36, 0.2)", category: "Tools" },
-  { name: "FireBird", icon: "sqlite", glow: "rgba(0, 59, 115, 0.2)", category: "Tools" },
+  { name: "UX/UI", icon: "figma", glow: "rgba(242, 78, 30, 0.2)", category: "Tools" },
 ];
