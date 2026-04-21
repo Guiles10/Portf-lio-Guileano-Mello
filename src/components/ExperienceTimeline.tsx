@@ -78,7 +78,7 @@ export default function ExperienceTimeline() {
               <div className="exp-details-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
                 {exp.items.map((item, i) => (
                   <div key={i} style={{ borderLeft: "2px solid var(--primary)", paddingLeft: "1.5rem" }}>
-                    <h4 style={{ fontSize: "1.1rem", marginBottom: "0.5rem", color: "white" }}>{item.title}</h4>
+                    <h4 style={{ fontSize: "1.1rem", marginBottom: "0.5rem", color: "var(--text-main)" }}>{item.title}</h4>
                     <p style={{ color: "var(--text-muted)", fontSize: "0.95rem", lineHeight: "1.6" }}>{item.description}</p>
                   </div>
                 ))}

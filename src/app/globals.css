@@ -1,4 +1,5 @@
 :root {
+  /* Default (Dark Theme) */
   --primary: #FF6B00;
   --primary-glow: rgba(255, 107, 0, 0.25);
   --primary-low: rgba(255, 107, 0, 0.1);
@@ -8,8 +9,110 @@
   --text-main: #FFFFFF;
   --text-muted: #A0A0A0;
   --border: rgba(255, 255, 255, 0.1);
-  --font-space: var(--font-space), 'Space Grotesk', sans-serif;
+  
+  /* Additional Safe Variables for elements with hardcoded transparency */
+  --surface-5: rgba(255, 255, 255, 0.05);
+  --surface-3: rgba(255, 255, 255, 0.03);
+  --surface-1: rgba(255, 255, 255, 0.015);
+  --nav-bg: rgba(10, 10, 10, 0.95);
+  
+  --font-sans: var(--font-sans), 'Open Sans', sans-serif;
   --font-mono: var(--font-mono), 'JetBrains Mono', monospace;
+}
+
+[data-theme='light'] {
+  --primary: #10B981; /* Emerald Green */
+  --primary-glow: rgba(16, 185, 129, 0.25);
+  --primary-low: rgba(16, 185, 129, 0.1);
+  --bg-dark: #FFFFFF; /* Branco */
+  --bg-card: #F8FAFC; /* Branco acinzentado/azulado muito sutil para cards */
+  --bg-card-hover: #F1F5F9;
+  --text-main: #0F172A; /* Azul escuro premium */
+  --text-muted: #64748B; /* Azul acinzentado suave */
+  --border: rgba(15, 23, 42, 0.1); /* Bordas escuras translúcidas */
+  
+  /* Translated surfaces suitable for white background */
+  --surface-5: rgba(15, 23, 42, 0.05);
+  --surface-3: rgba(15, 23, 42, 0.03);
+  --surface-1: rgba(15, 23, 42, 0.035); /* Linhas do grid suaves */
+  --nav-bg: rgba(10, 10, 10, 0.95); /* Header sempre preto ao escrolar */
+}
+
+/* Light mode specific adjustments per user request */
+[data-theme='light'] .floating-icon-img { filter: invert(1) opacity(0.8) !important; } /* Muito mais escuros */
+[data-theme='light'] .floating-icon-text { color: #000 !important; opacity: 0.8 !important; }
+
+/* Textos brancos no header escrolado no modo light */
+[data-theme='light'] nav.scrolled .nav-logo,
+[data-theme='light'] nav.scrolled .nav-links a {
+  color: #FFF !important;
+}
+
+[data-theme='light'] .exp-card,
+[data-theme='light'] .project-card,
+[data-theme='light'] .experience-item,
+[data-theme='light'] .soft-skill-card {
+  background: #F3F4F6 !important; /* Cinza bem claro */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important; /* Sombra muito suave */
+  border-color: rgba(0,0,0,0.05) !important;
+  border-radius: 12px;
+}
+[data-theme='light'] .experience-item {
+  padding: 2rem;
+}
+
+[data-theme='light'] .exp-title,
+[data-theme='light'] .proj-title,
+[data-theme='light'] .exp-list li,
+[data-theme='light'] .counter-val,
+[data-theme='light'] .counter-label,
+[data-theme='light'] .soft-skill-title,
+[data-theme='light'] .soft-skill-desc,
+[data-theme='light'] .premium-footer p,
+[data-theme='light'] .premium-footer h4,
+[data-theme='light'] .footer-link,
+[data-theme='light'] .nav-logo {
+  color: #000 !important;
+}
+
+[data-theme='light'] .premium-footer {
+  background: #E5E7EB !important; /* Cinza suave e alinhado */
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+[data-theme='light'] .contact-link-premium {
+  background: #FFFFFF !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important;
+  border-color: rgba(0,0,0,0.05) !important;
+}
+
+/* Skills Toggle Tweaks */
+[data-theme='light'] .skills-nav {
+  background: #E2E8F0 !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+}
+[data-theme='light'] .skill-tab.active {
+  color: #FFF !important; /* Escrito em branco */
+}
+[data-theme='light'] .skill-tab:not(.active) {
+  color: #000 !important;
+}
+[data-theme='light'] .active-pill {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+  border: 1px solid rgba(0,0,0,0.08) !important; /* Leve contorno e sombreado */
+}
+
+[data-theme='light'] .stack-item img {
+  filter: brightness(0) !important; /* Forces all PNG icons to black */
+}
+[data-theme='light'] .custom-stack-icon svg {
+  fill: #000 !important;
+  color: #000 !important;
+}
+[data-theme='light'] .stack-name {
+  color: #000 !important;
+  font-weight: 600;
 }
 
 * {
@@ -26,18 +129,25 @@ html {
 body {
   background-color: var(--bg-dark);
   color: var(--text-main);
-  font-family: var(--font-space);
+  font-family: var(--font-sans);
   line-height: 1.7;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   min-height: 100%;
+  font-weight: 300; /* Corpo regular ou light */
 }
 
 /* --- TYPOGRAPHY --- */
-h1, h2, h3, h4 {
-  font-weight: 700;
+h1, .hero-title {
+  font-weight: 800; /* Black */
   line-height: 1.1;
   letter-spacing: -0.02em;
+}
+
+h2, h3, h4 {
+  font-weight: 600; /* Bold ou medium */
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .mono {
@@ -61,7 +171,7 @@ h1, h2, h3, h4 {
 
 .section-label {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   opacity: 0.7;
 }
 
@@ -100,8 +210,8 @@ h1, h2, h3, h4 {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background-image: 
-    linear-gradient(to right, rgba(255,255,255,0.015) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.015) 1px, transparent 1px);
+    linear-gradient(to right, var(--surface-1) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--surface-1) 1px, transparent 1px);
   background-size: 50px 50px;
   pointer-events: none;
   z-index: 1;
@@ -125,14 +235,14 @@ nav {
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   z-index: 1000;
   transition: all 0.4s ease;
 }
 
 nav.scrolled {
   padding: 1.2rem 0;
-  background: rgba(10, 10, 10, 0.8);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -145,6 +255,7 @@ nav.scrolled {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 3rem;
 }
 
@@ -177,7 +288,8 @@ nav.scrolled {
 
 /* --- HERO SECTION --- */
 #hero {
-  height: 75vh;
+  height: 60vh;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,11 +303,11 @@ nav.scrolled {
 
 .title-wrapper {
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-title {
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -261,7 +373,7 @@ nav.scrolled {
 }
 
 .btn-secondary:hover {
-  background: rgba(255,255,255,0.05);
+  background: var(--surface-5);
   transform: translateY(-4px);
 }
 
@@ -373,8 +485,7 @@ nav.scrolled {
 }
 
 .exp-card {
-  extend: .premium-card; /* Manual extension */
-  background: rgba(17, 17, 17, 0.4);
+  background: var(--bg-card);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border);
   padding: 2.5rem;
@@ -387,7 +498,7 @@ nav.scrolled {
 }
 
 .exp-icon { color: var(--primary); margin-bottom: 1.5rem; }
-.exp-title { font-size: 1.25rem; margin-bottom: 1.5rem; color: #fff; }
+.exp-title { font-size: 1.25rem; margin-bottom: 1.5rem; color: var(--text-main); }
 .exp-list { list-style: none; color: var(--text-muted); font-size: 0.95rem; }
 .exp-list li { margin-bottom: 0.6rem; position: relative; padding-left: 1.2rem; }
 .exp-list li::before {
@@ -462,8 +573,8 @@ nav.scrolled {
 }
 
 .stack-item {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.05);
+  background: var(--surface-3);
+  border: 1px solid var(--surface-5);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -473,7 +584,7 @@ nav.scrolled {
 }
 
 .stack-item img { width: 32px; height: 32px; transition: 0.3s; }
-.stack-item:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
+.stack-item:hover { border-color: rgba(255,255,255,0.2); background: var(--surface-5); }
 .stack-name { font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-muted); }
 
 .soft-skills-grid {
@@ -540,7 +651,7 @@ nav.scrolled {
   font-size: 0.9rem;
   transition: all 0.3s;
   padding: 0.5rem 1rem;
-  background: rgba(255,255,255,0.03);
+  background: var(--surface-3);
   border: 1px solid var(--border);
 }
 
@@ -670,11 +781,13 @@ nav.scrolled {
 #orbit:hover .ring-1 { animation-duration: 8s; }
 #orbit:hover .ring-2 { animation-duration: 10s; }
 #orbit:hover .ring-3 { animation-duration: 12s; }
+#orbit:hover .ring-4 { animation-duration: 15s; }
 #orbit:hover .pulse-wave { animation-duration: 1.5s; }
 
 .ring-1 { width: 240px; height: 240px; animation: spinRight 25s linear infinite; }
 .ring-2 { width: 370px; height: 370px; animation: spinLeft 30s linear infinite; }
 .ring-3 { width: 500px; height: 500px; animation: spinRight 35s linear infinite; }
+.ring-4 { width: 630px; height: 630px; animation: spinLeft 40s linear infinite; }
 
 @keyframes spinRight { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
 @keyframes spinLeft { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(-360deg); } }
@@ -916,7 +1029,7 @@ nav.scrolled {
 
 @media (max-width: 1024px) {
   .nav-links { 
-    display: none; /* Hidden on mobile by default */
+    display: none !important; /* Force hide since inline styles used to exist */
   }
   .nav-links::-webkit-scrollbar { display: none; }
   .nav-links a { font-size: 0.75rem; white-space: nowrap; }
@@ -1076,6 +1189,14 @@ nav.scrolled {
 }
 
 /* --- MOBILE NAV & HAMBURGER --- */
+.show-on-mobile { display: none; }
+.hide-on-mobile { display: block; }
+
+@media (max-width: 1024px) {
+  .show-on-mobile { display: block; }
+  .hide-on-mobile { display: none; }
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -1088,7 +1209,7 @@ nav.scrolled {
 }
 
 @media (max-width: 1024px) {
-  .hamburger { display: flex; }
+  .hamburger { display: flex !important; }
 }
 
 .hamburger span {
@@ -1097,6 +1218,11 @@ nav.scrolled {
   height: 2px;
   background-color: var(--text-main);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Force hamburger to be white when header is scrolled (dark background) */
+nav.scrolled .hamburger span {
+  background-color: #FFF !important;
 }
 
 .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
@@ -1134,9 +1260,13 @@ nav.scrolled {
 .mobile-link {
   font-size: 1.8rem;
   font-family: var(--font-mono);
-  color: var(--text-muted);
+  color: #FFF; /* In light mode, the background is dark, so text should be white */
   text-decoration: none;
   transition: color 0.3s;
+}
+
+[data-theme='light'] .mobile-link {
+  color: #FFF !important; /* Force white text over dark menu in light mode */
 }
 
 .mobile-link:hover {

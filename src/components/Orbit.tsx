@@ -94,7 +94,7 @@ export default function Orbit() {
           </div>
 
           {/* Ring 4 (Satellite) - Specialized Performance & UX */}
-          <div className="ring duration-40 delay-1s" style={{ width: "630px", height: "630px" }}>
+          <div className="ring ring-4 duration-40 delay-1s" style={{ width: "630px", height: "630px" }}>
             <div className="planet p-1" data-tooltip="Delphi">
               <img src="/tech-logos/delphi.png" alt="Delphi" style={{ width: "24px" }} />
             </div>
