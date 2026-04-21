@@ -89,6 +89,7 @@ export default function FloatingLogos() {
                 src={`https://cdn.simpleicons.org/${el.tech.icon}/ffffff`}
                 alt={el.tech.name}
                 onError={() => handleIconError(el.tech.name)}
+                className="floating-icon-img"
                 style={{
                   width: "50%",
                   height: "50%",
@@ -99,12 +100,13 @@ export default function FloatingLogos() {
                 }}
               />
             ) : (
-              <div style={{ color: "white", fontWeight: "bold", opacity: 0.6, marginBottom: "4px" }}>
+              <div className="floating-icon-text" style={{ color: "white", fontWeight: "bold", opacity: 0.6, marginBottom: "4px" }}>
                 {el.tech.name[0]}
               </div>
             )}
 
             <span 
+              className="floating-icon-text"
               style={{ 
                 fontFamily: "'JetBrains Mono', monospace", 
                 fontSize: "0.6rem", 

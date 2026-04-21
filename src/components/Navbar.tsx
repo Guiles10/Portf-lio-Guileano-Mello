@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -68,18 +69,23 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <div className="hide-on-mobile"><ThemeToggle /></div>
           </div>
 
           {/* Hamburger Button */}
-          <button 
-            className={`hamburger ${isOpen ? "open" : ""}`} 
-            onClick={toggleMenu}
-            aria-label="Toggle Menu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="show-on-mobile"><ThemeToggle /></div>
+            <button 
+              className={`hamburger ${isOpen ? "open" : ""}`} 
+              onClick={toggleMenu}
+              aria-label="Toggle Menu"
+              style={{ marginLeft: "1rem" }}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
       </nav>
 
