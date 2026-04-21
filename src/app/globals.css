@@ -1189,12 +1189,15 @@ nav.scrolled {
 
 .project-realizado-tag {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
-  padding: 0.3rem 0.6rem;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  background: var(--primary-low);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  letter-spacing: 0.02em;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .project-realizado-links {
