@@ -4,20 +4,20 @@ export default function ExperienceTimeline() {
   const experiences = [
     {
       company: "Produtora Arion",
-      role: "Gestor de Tráfego Pago & Desenvolvedor Web",
+      role: "Desenvolvedor Web Full Stack",
       period: "2025 – Atual",
       items: [
         {
-          title: "Aquisição de clientes/leads via tráfego pago",
-          description: "Estruturei um canal de aquisição recorrente e escalável via Google e Meta Ads, atingindo ROAS de até 20x.",
+          title: "Desenvolvimento de aplicações SaaS escaláveis",
+          description: "Arquitetura e implementação de soluções robustas com foco em escalabilidade e manutenção de longo prazo.",
         },
         {
-          title: "Desenvolvimento de páginas de alta conversão",
-          description: "Implementação de Landing Pages e E-commerce com foco em UX, resultando em aumento de 50% na taxa de conversão.",
+          title: "Páginas de alta performance e conversão",
+          description: "Desenvolvimento de interfaces otimizadas (LCP, SEO) utilizando React e Next.js para maximizar a experiência do usuário.",
         },
         {
-          title: "Estruturação do funil e operação comercial",
-          description: "Integração ao CRM e automações de qualificação de leads para otimização da operação comercial.",
+          title: "Integração de sistemas e automações",
+          description: "Desenvolvimento de APIs e automações de fluxo de dados para otimização de processos internos.",
         },
       ],
     },
@@ -35,8 +35,8 @@ export default function ExperienceTimeline() {
           description: "Criação de APIs RESTful para sincronização automática de estoque entre plataformas de terceiros.",
         },
         {
-          title: "Modernização da interface de sistema legado",
-          description: "Refatoração de UX para sistema de 2002, reduzindo drasticamente o volume de chamados de suporte.",
+          title: "Modernização da interface de sistemas",
+          description: "Refatoração de UX para sistemas desktop antigos, reduzindo drasticamente o volume de chamados de suporte.",
         },
       ],
     },

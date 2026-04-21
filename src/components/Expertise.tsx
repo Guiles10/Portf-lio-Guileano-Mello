@@ -26,35 +26,10 @@ export default function Expertise() {
             </div>
             <h3 className="exp-title">[Desenvolvimento Full Stack]</h3>
             <ul className="exp-list">
-              <li>React & Next.js</li>
-              <li>Node.js & APIs REST</li>
-              <li>PostgreSQL & Bancos Relacionais</li>
-              <li>Arquitetura Serverless & CI/CD</li>
-            </ul>
-          </div>
-
-          <div className="exp-card">
-            <div className="exp-icon">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M3 3v18h18"></path>
-                <path d="M18 17V9"></path>
-                <path d="M13 17V5"></path>
-                <path d="M8 17v-3"></path>
-              </svg>
-            </div>
-            <h3 className="exp-title">[Performance & Tráfego Pago]</h3>
-            <ul className="exp-list">
-              <li>Google Ads (Search, Display, PMax)</li>
-              <li>Meta Ads (Facebook/Instagram)</li>
-              <li>Otimização de ROAS & CPA</li>
-              <li>Estruturação de Funis Avançados</li>
+              <li>React, Next.js & TypeScript</li>
+              <li>Node.js, NestJS & APIs REST</li>
+              <li>PostgreSQL, MongoDB & SQL</li>
+              <li>Cloud, Docker & CI/CD</li>
             </ul>
           </div>
 
@@ -73,10 +48,33 @@ export default function Expertise() {
             </div>
             <h3 className="exp-title">[UX/UI & Conversão]</h3>
             <ul className="exp-list">
-              <li>Desenho de Interfaces</li>
-              <li>Landing Pages Focadas em ROI</li>
-              <li>Testes A/B & Analytics</li>
-              <li>Automações (CRM/Webhooks)</li>
+              <li>Design System & Prototipagem</li>
+              <li>Interfaces Otimizadas (SEO & LCP)</li>
+              <li>Testes A/B & Análise de Dados</li>
+              <li>Automações & Webhooks</li>
+            </ul>
+          </div>
+
+          <div className="exp-card">
+            <div className="exp-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 className="exp-title">[Sistemas SaaS & E-commerce]</h3>
+            <ul className="exp-list">
+              <li>Arquitetura de Software Escalável</li>
+              <li>Sistemas de Assinatura & Dashboard</li>
+              <li>Segurança & Autenticação (JWT/OAuth)</li>
             </ul>
           </div>
         </div>

@@ -9,8 +9,6 @@ export default function ResultsCounters() {
 
   // Counter states
   const [proj, setProj] = useState(0);
-  const [roas, setRoas] = useState(0);
-  const [conv, setConv] = useState(0);
   const [years, setYears] = useState(0);
 
   useEffect(() => {
@@ -63,30 +61,20 @@ export default function ResultsCounters() {
     };
 
     animateVal(35, setProj);
-    animateVal(20, setRoas);
-    animateVal(50, setConv);
     animateVal(3, setYears);
   };
 
   return (
     <section ref={sectionRef} id="resultados" className={`reveal ${isVisible ? "active" : ""}`}>
       <div className="container">
-        <div className="counter-grid">
+        <div className="counter-grid" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
           <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
             <div className="counter-val">{proj}+</div>
             <div className="counter-label">Projetos Web</div>
           </div>
           <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
-            <div className="counter-val">{roas}x</div>
-            <div className="counter-label">ROAS Máximo</div>
-          </div>
-          <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
-            <div className="counter-val">+{conv}%</div>
-            <div className="counter-label">Aumento em Conversão</div>
-          </div>
-          <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
             <div className="counter-val">{years}+</div>
-            <div className="counter-label">Anos Exp. Híbrida</div>
+            <div className="counter-label">Anos de Experiência</div>
           </div>
         </div>
       </div>

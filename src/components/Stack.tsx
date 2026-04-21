@@ -12,7 +12,6 @@ export default function Stack() {
   const techCategories = [
     { id: "Frontend", label: "[FRONTEND]" },
     { id: "Backend", label: "[BACKEND]" },
-    { id: "Performance", label: "[PERFORMANCE & ADS]" },
     { id: "Tools", label: "[TOOLS & SPECIALTIES]" },
   ];
 
@@ -20,32 +19,32 @@ export default function Stack() {
     {
       title: "Comunicação Técnica",
       icon: <MessageSquare size={24} />,
-      desc: "Habilidade de traduzir conceitos e lógicas de programação e marketing para diferentes públicos, facilitando a comunicação o entendimento e o alinhamento de expectativas."
+      desc: "Habilidade de traduzir conceitos complexos e lógicas de programação para diferentes públicos, facilitando o entendimento técnico e o alinhamento de expectativas entre times."
     },
     {
-      title: "Foco em Resultados (ROAS)",
+      title: "Mentalidade de Produto",
       icon: <Target size={24} />,
-      desc: "Mentalidade orientada a performance, priorizando ações que geram retorno financeiro real e escalabilidade para o negócio."
+      desc: "Visão orientada a resultados reais, priorizando funcionalidades que agregam valor direto ao usuário final e garantem a viabilidade técnica do projeto."
     },
     {
       title: "Resolução de Problemas",
       icon: <Zap size={24} />,
-      desc: "Abordagem analítica e criativa para solucionar problemas e bugs, explorando diversas variações e cenários possíveis com foco em prever consequências. Atuo em colaboração com a equipe para validar ideias, integrando IAs para lapidar e otimizar as soluções finais."
+      desc: "Abordagem analítica e criativa para solucionar desafios técnicos, explorando diversas variações e cenários possíveis com foco em arquiteturas resilientes."
     },
     {
       title: "Colaboração & Adaptabilidade",
       icon: <Users size={24} />,
-      desc: "Focado em um trabalho de equipe fluido, possuo facilidade em seguir diretrizes, proatividade para questionar e contribuir com opiniões construtivas. Ajusto-me rapidamente a qualquer ambiente, sendo capaz de liderar e organizar times quando necessário."
+      desc: "Focado em um trabalho de equipe fluido, com facilidade em seguir diretrizes e proatividade para contribuir com opiniões construtivas e melhorias contínuas."
     },
     {
-      title: "Trabalho em Equipe",
-      icon: <Users size={24} />,
-      desc: "Acredito que os melhores resultados nascem da sinergia coletiva. Priorizo a troca de experiências e o suporte mútuo, garantindo um ambiente de trabalho harmonioso onde o sucesso do time é o objetivo principal."
+      title: "Arquitetura & Clean Code",
+      icon: <Layers size={24} />,
+      desc: "Preocupação constante com a organização do código e a estrutura do sistema, garantindo que a solução seja legível, testável e fácil de manter."
     },
     {
       title: "Confiabilidade & Entrega",
       icon: <ShieldCheck size={24} />,
-      desc: "Comprometimento com prazos e qualidade técnica, garantindo que a solução final atenda aos requisitos de negócio e de performance."
+      desc: "Comprometimento rigoroso com prazos e excelência técnica, garantindo que a solução final atenda a todos os requisitos de segurança e performance."
     }
   ];
 
