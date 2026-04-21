@@ -9,8 +9,8 @@ export default function ResultsCounters() {
 
   // Counter states
   const [proj, setProj] = useState(0);
-  const [roas, setRoas] = useState(0);
-  const [conv, setConv] = useState(0);
+  const [saas, setSaas] = useState(0);
+  const [prod, setProd] = useState(0);
   const [years, setYears] = useState(0);
 
   useEffect(() => {
@@ -63,8 +63,8 @@ export default function ResultsCounters() {
     };
 
     animateVal(35, setProj);
-    animateVal(20, setRoas);
-    animateVal(50, setConv);
+    animateVal(12, setSaas);
+    animateVal(20, setProd);
     animateVal(3, setYears);
   };
 
@@ -77,16 +77,16 @@ export default function ResultsCounters() {
             <div className="counter-label">Projetos Web</div>
           </div>
           <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
-            <div className="counter-val">{roas}x</div>
-            <div className="counter-label">ROAS Máximo</div>
+            <div className="counter-val">{saas}+</div>
+            <div className="counter-label">Sistemas SaaS</div>
           </div>
           <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
-            <div className="counter-val">+{conv}%</div>
-            <div className="counter-label">Aumento em Conversão</div>
+            <div className="counter-val">{prod}+</div>
+            <div className="counter-label">Aplicações em Produção</div>
           </div>
           <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
             <div className="counter-val">{years}+</div>
-            <div className="counter-label">Anos Exp. Híbrida</div>
+            <div className="counter-label">Anos de Experiência</div>
           </div>
         </div>
       </div>
