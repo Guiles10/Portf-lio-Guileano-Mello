@@ -14,7 +14,7 @@ export default function Footer() {
             <h2 className="nav-logo" style={{ marginBottom: "1.5rem", display: "block" }}>GGM</h2>
             <p>
               Desenvolvedor Full Stack especializado em experiências digitais de alta performance. 
-              Unindo a precisão da engenharia com a inovação do growth marketing.
+              Unindo a precisão da engenharia com uma visão estratégica de produto.
             </p>
             <div className="social-links">
               <a href="https://github.com/Guiles10" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">

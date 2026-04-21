@@ -28,25 +28,14 @@ export default function About() {
             <p
               style={{
                 color: "var(--text-muted)",
-                marginBottom: "1.5rem",
-                fontSize: "1.1rem",
-                lineHeight: "1.8"
-              }}
-            >
-              Complemento minha atuação com gestão estratégica de tráfego pago, utilizando Google Ads e Meta Ads 
-              como ferramentas para potencializar resultados e validar decisões com dados reais.
-            </p>
-            <p
-              style={{
-                color: "var(--text-muted)",
                 marginBottom: "2.5rem",
                 fontSize: "1.1rem",
                 lineHeight: "1.8"
               }}
             >
-              Minha proposta de valor está em reduzir a distância entre desenvolvimento e marketing, 
-              criando sistemas que não apenas funcionam bem, mas que também geram impacto direto no crescimento do negócio 
-              — com foco em mensuração, escalabilidade e ROI consistente.
+              Minha proposta de valor está em unir excelência técnica com uma visão estratégica de produto, 
+              criando sistemas que não apenas funcionam bem, mas que também são escaláveis e centrados na experiência do usuário 
+              — sempre com foco em performance, segurança e impacto direto nos objetivos do negócio.
             </p>
             <div className="metrics-list">
               <div className="metric-item">

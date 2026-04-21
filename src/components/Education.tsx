@@ -4,9 +4,9 @@ import Reveal from "./Reveal";
 
 export default function Education() {
   const certifications = [
-    "Comunidade Sobral de Tráfego Pago",
-    "Fórmula de Lançamento",
     "AWS (Cloud Foundations & Solutions)",
+    "Docker & Containerização",
+    "Arquitetura de Microsserviços",
     "Delphi e FireBird Básico",
   ];
 
