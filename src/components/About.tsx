@@ -20,8 +20,9 @@ export default function About() {
                 lineHeight: "1.8"
               }}
             >
-              Atuo como desenvolvedor web focado em construir soluções digitais orientadas a performance e crescimento. 
-              Trabalho desde a arquitetura técnica até a implementação de aplicações otimizadas para conversão, 
+              Atuo como desenvolvedor Full Stack (**Frontend** e **Backend**) focado em construir soluções digitais e **SaaS** de alta performance. 
+              Especialista em ecossistemas modernos com **JavaScript**, **TypeScript**, **Node.js**, **React**, **Next.js** e **Nest.js**, 
+              trabalho desde a arquitetura técnica com **APIs REST** e **banco de dados** até a implementação de aplicações otimizadas para conversão, 
               garantindo eficiência, velocidade e uma experiência sólida ao usuário.
             </p>
             <p
