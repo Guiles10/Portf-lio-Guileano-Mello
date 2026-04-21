@@ -54,9 +54,19 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2 }}
           className="hero-subtitle" 
-          style={{ fontSize: "clamp(0.85rem, 1.6vw, 1rem)", maxWidth: "1000px", marginInline: "auto", marginTop: "1rem", textTransform: "none", letterSpacing: "normal" }}
+          style={{ 
+            fontSize: "clamp(1.1rem, 2.2vw, 1.4rem)", 
+            maxWidth: "1000px", 
+            marginInline: "auto", 
+            marginTop: "1.5rem", 
+            textTransform: "none", 
+            letterSpacing: "normal",
+            lineHeight: "1.8"
+          }}
         >
-          <span style={{ color: "var(--primary)", fontWeight: "bold" }}>Desenvolvedor Web Full Stack</span> (Node.js, React, TypeScript, JavaScript, Data Base) | <span style={{ fontWeight: "bold" }}>Full Cycle Developer</span> | Desenvolvedor de Sites, SaaS e E-commerce
+          <span style={{ color: "var(--primary)", fontWeight: "bold" }}>Desenvolvedor Web Full Stack</span> (Node.js, React, TypeScript, JavaScript, Data Base)
+          <br /><span style={{ color: "var(--primary)", fontWeight: "bold" }}>|</span> <span style={{ fontWeight: "bold" }}>Full Cycle Developer</span> 
+          <br /><span style={{ color: "var(--primary)", fontWeight: "bold" }}>|</span> Desenvolvedor de Sites, SaaS e E-commerce
         </motion.p>
 
         <div className="hero-ctas reveal delay-2 active" style={{ marginTop: "1rem" }}>
