@@ -54,16 +54,7 @@ export default function About() {
                 <div className="metric-line"></div>
                 <span className="metric-val">35+</span>
               </div>
-              <div className="metric-item">
-                <span className="mono">Máximo ROAS Alcançado</span>
-                <div className="metric-line"></div>
-                <span className="metric-val">20x</span>
-              </div>
-              <div className="metric-item">
-                <span className="mono">Melhoria em Conversão</span>
-                <div className="metric-line"></div>
-                <span className="metric-val">+50%</span>
-              </div>
+
             </div>
           </div>
 
