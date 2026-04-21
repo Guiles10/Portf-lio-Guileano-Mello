@@ -5,8 +5,7 @@ import Reveal from "./Reveal";
 export default function Education() {
   const certifications = [
     "AWS (Cloud Foundations & Solutions)",
-    "Docker & Containerização",
-    "Arquitetura de Microsserviços",
+    "Iniciando formação em Banco de Dados (foco em Data Analytics)",
     "Delphi e FireBird Básico",
   ];
 
