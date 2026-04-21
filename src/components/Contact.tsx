@@ -9,7 +9,7 @@ export default function Contact() {
             // 006 — INICIAR TRANSMISSÃO
           </span>
           <h2 className="contact-large">
-            Pronto para Desenvolver / Aprimorar seu sistema.
+            Pronto para Desenvolver ou Aprimorar seu sistema.
           </h2>
           
           <div className="contact-links" style={{ justifyContent: "center", marginTop: "4rem" }}>

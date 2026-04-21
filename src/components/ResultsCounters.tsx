@@ -9,8 +9,6 @@ export default function ResultsCounters() {
 
   // Counter states
   const [proj, setProj] = useState(0);
-  const [saas, setSaas] = useState(0);
-  const [prod, setProd] = useState(0);
   const [years, setYears] = useState(0);
 
   useEffect(() => {
@@ -63,26 +61,16 @@ export default function ResultsCounters() {
     };
 
     animateVal(35, setProj);
-    animateVal(12, setSaas);
-    animateVal(20, setProd);
     animateVal(3, setYears);
   };
 
   return (
     <section ref={sectionRef} id="resultados" className={`reveal ${isVisible ? "active" : ""}`}>
       <div className="container">
-        <div className="counter-grid">
+        <div className="counter-grid" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
           <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
             <div className="counter-val">{proj}+</div>
             <div className="counter-label">Projetos Web</div>
-          </div>
-          <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
-            <div className="counter-val">{saas}+</div>
-            <div className="counter-label">Sistemas SaaS</div>
-          </div>
-          <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
-            <div className="counter-val">{prod}+</div>
-            <div className="counter-label">Aplicações em Produção</div>
           </div>
           <div className="premium-card" style={{ textAlign: "center", border: "none", background: "transparent", padding: "1rem" }}>
             <div className="counter-val">{years}+</div>
