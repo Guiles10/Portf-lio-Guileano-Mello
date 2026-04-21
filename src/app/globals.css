@@ -301,7 +301,7 @@ nav.scrolled {
 }
 
 .hero-content {
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -340,7 +340,7 @@ nav.scrolled {
 .hero-ctas {
   display: flex;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 4rem;
 }
 

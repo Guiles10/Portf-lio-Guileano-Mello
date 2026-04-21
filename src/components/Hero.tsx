@@ -57,14 +57,15 @@ export default function Hero() {
           style={{ 
             fontSize: "clamp(1.1rem, 2.2vw, 1.4rem)", 
             maxWidth: "1000px", 
-            marginInline: "auto", 
+            textAlign: "left",
+            marginInline: "0", 
             marginTop: "1.5rem", 
             textTransform: "none", 
             letterSpacing: "normal",
             lineHeight: "1.8"
           }}
         >
-          <span style={{ color: "var(--primary)", fontWeight: "bold" }}>Desenvolvedor Web Full Stack</span> (Node.js, React, TypeScript, JavaScript, Data Base)
+          <span style={{ color: "var(--primary)", fontWeight: "bold" }}>|</span> <span style={{ color: "var(--primary)", fontWeight: "bold" }}>Desenvolvedor Web Full Stack</span>
           <br /><span style={{ color: "var(--primary)", fontWeight: "bold" }}>|</span> <span style={{ fontWeight: "bold" }}>Full Cycle Developer</span> 
           <br /><span style={{ color: "var(--primary)", fontWeight: "bold" }}>|</span> Desenvolvedor de Sites, SaaS e E-commerce
         </motion.p>
