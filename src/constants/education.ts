@@ -11,7 +11,7 @@ export const ACADEMIC_FORMATION: AcademicFormation = {
   institution: "Kenzie Academy Brasil",
   period: "Junho/2022 – Julho/2023",
   description: "Formação intensiva com mais de 2.000 horas de código, focada em tecnologias do ecossistema JavaScript (React, Node.js, TypeScript) e arquitetura de sistemas.",
-  certificateUrl: "/certificates/kenzie_fullstack.jfif",
+  certificateUrl: "/certificates/kenzie_fullstack.jpg",
 };
 
 export const CERTIFICATIONS: string[] = [
