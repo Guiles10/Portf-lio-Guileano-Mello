@@ -17,7 +17,7 @@
   --nav-bg: rgba(10, 10, 10, 0.95);
   
   --font-sans: var(--font-sans), 'Open Sans', sans-serif;
-  --font-mono: var(--font-mono), 'JetBrains Mono', monospace;
+  --font-mono: var(--font-sans), 'Open Sans', sans-serif;
 }
 
 [data-theme='light'] {
