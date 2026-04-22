@@ -14,13 +14,14 @@ export const TECH_STACK: Technology[] = [
   { name: "Tailwind CSS", icon: "tailwindcss", glow: "rgba(56, 189, 248, 0.2)", category: "Frontend" },
   { name: "Sass / CSS", icon: "sass", glow: "rgba(204, 102, 153, 0.2)", category: "Frontend" },
   { name: "HTML", icon: "html5", glow: "rgba(227, 79, 38, 0.2)", category: "Frontend" },
-  { name: "CSS", icon: "css3", glow: "rgba(21, 114, 182, 0.2)", category: "Frontend" },
+  { name: "CSS3", icon: "css3", glow: "rgba(21, 114, 182, 0.2)", category: "Frontend" },
 
   // Backend
   { name: "Node.js", icon: "nodedotjs", glow: "rgba(104, 160, 99, 0.2)", category: "Backend" },
   { name: "NestJS", icon: "nestjs", glow: "rgba(224, 35, 78, 0.2)", category: "Backend" },
   { name: "Prisma", icon: "prisma", glow: "rgba(12, 50, 73, 0.2)", category: "Backend" },
   { name: "PostgreSQL", icon: "postgresql", glow: "rgba(51, 103, 145, 0.2)", category: "Backend" },
+  { name: "Supabase", icon: "supabase", glow: "rgba(62, 207, 142, 0.2)", category: "Backend" },
   { name: "APIs REST", icon: "postman", glow: "rgba(255, 108, 55, 0.2)", category: "Backend" },
   { name: "Docker", icon: "docker", glow: "rgba(0, 144, 204, 0.2)", category: "Backend" },
   { name: "CI/CD", icon: "githubactions", glow: "rgba(32, 136, 255, 0.2)", category: "Backend" },
@@ -34,9 +35,12 @@ export const TECH_STACK: Technology[] = [
 
   // Tools & Specialties
   { name: "Git", icon: "git", glow: "rgba(240, 80, 50, 0.2)", category: "Tools" },
+  { name: "GitHub", icon: "github", glow: "rgba(255, 255, 255, 0.15)", category: "Tools" },
   { name: "AWS", icon: "amazonwebservices", glow: "rgba(255, 153, 0, 0.2)", category: "Tools" },
   { name: "Claude / IA", icon: "anthropic", glow: "rgba(217, 119, 87, 0.2)", category: "Tools" },
   { name: "OpenAI", icon: "openai", glow: "rgba(116, 170, 156, 0.2)", category: "Tools" },
+  { name: "Slack", icon: "slack", glow: "rgba(74, 21, 75, 0.2)", category: "Tools" },
+  { name: "Fire Bird 2.5", icon: "firebird", glow: "rgba(227, 79, 38, 0.2)", category: "Tools" },
   { name: "Delphi", icon: "embarcadero", glow: "rgba(165, 30, 36, 0.2)", category: "Tools" },
   { name: "UX/UI", icon: "figma", glow: "rgba(242, 78, 30, 0.2)", category: "Tools" },
 ];

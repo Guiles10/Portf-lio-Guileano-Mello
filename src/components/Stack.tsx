@@ -52,7 +52,7 @@ export default function Stack() {
     <Reveal>
       <section id="stack" className="container">
         <span className="mono section-label">// 004 — COMPETÊNCIAS</span>
-        <h2 className="section-title section-header">Minhas Skills.</h2>
+        <h2 className="section-title section-header">Minhas skills</h2>
 
         {/* Intuitive Switcher */}
         <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: "3rem" }}>
@@ -107,53 +107,38 @@ export default function Stack() {
                     <div className="stack-grid">
                       {TECH_STACK.filter((tech) => tech.category === cat.id).map((tech) => (
                         <div className="stack-item" key={tech.name}>
-                          {tech.name === "AWS" ? (
-                            <div className="custom-stack-icon">
-                              <img src="/tech-logos/aws.png" alt="AWS" style={{ width: "32px" }} />
-                            </div>
-                          ) : tech.name === "OpenAI" ? (
-                            <div className="custom-stack-icon">
-                              <img src="/tech-logos/openai.png" alt="OpenAI" style={{ width: "32px" }} />
-                            </div>
-                          ) : tech.name === "CSS" ? (
-                            <div className="custom-stack-icon">
-                              <img src="/tech-logos/css.png" alt="CSS" style={{ width: "32px" }} />
-                            </div>
-                          ) : tech.name === "Sass / CSS" ? (
-                            <div className="custom-stack-icon">
-                              <img src="/tech-logos/sass.png" alt="Sass" style={{ width: "32px", filter: "brightness(0) invert(1)" }} />
-                            </div>
-                          ) : tech.name === "Delphi" ? (
-                            <div className="custom-stack-icon">
-                              <img src="/tech-logos/delphi.png" alt="Delphi" style={{ width: "32px" }} />
-                            </div>
-                          ) : tech.name.includes("Claude") ? (
-                            <div className="custom-stack-icon">
-                              <img src="/tech-logos/claude.png" alt="Claude" style={{ width: "32px", borderRadius: "4px" }} />
-                            </div>
-                          ) : tech.name.includes("APIs REST") ? (
-                            <div className="custom-stack-icon">
-                              <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
-                                <path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.1-3.9-4.5-.4-3.5-3.4-6-6.9-6-2.5 0-4.6 1.3-5.8 3.2C3.2 7.8 1.5 9.4 1.5 11.5c0 2.5 2 4.5 4.5 4.5" />
-                                <path d="M12 11h.01M16 11h.01M8 11h.01M12 15h.01M16 15h.01M8 15h.01" strokeWidth="3" strokeLinecap="round" />
-                                <path d="M6 12l2 2 4-4 4 4 2-2" />
-                              </svg>
-                            </div>
-                          ) : tech.name === "UX/UI" ? (
-                            <div className="custom-stack-icon">
-                              <img src="/tech-logos/ux-ui.png" alt="UX/UI" style={{ width: "32px" }} />
-                            </div>
-                          ) : (
-                            <img
-                              src={`https://cdn.simpleicons.org/${tech.icon}/ffffff`}
-                              alt={tech.name}
-                              onError={(e) => {
-                                e.currentTarget.style.display = "none";
-                                // Fallback icon if simpleicons fails
-                                e.currentTarget.parentElement?.querySelector('.fallback-icon')?.setAttribute("style", "display: block");
-                              }}
-                            />
-                          )}
+                          <div className="stack-icon-wrapper">
+                            {tech.name === "AWS" ? (
+                              <img src="/tech-logos/aws.svg" alt="AWS" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "OpenAI" ? (
+                              <img src="/tech-logos/openai.svg" alt="OpenAI" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "CSS3" ? (
+                              <img src="/tech-logos/css3.svg" alt="CSS3" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "Sass / CSS" ? (
+                              <img src="/tech-logos/sass.svg" alt="Sass" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "Fire Bird 2.5" ? (
+                              <img src="/tech-logos/firebird.svg" alt="Firebird" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "Delphi" ? (
+                              <img src="/tech-logos/delphi.svg" alt="Delphi" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name.includes("Claude") ? (
+                              <img src="/tech-logos/claude.svg" alt="Claude" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name.includes("CI/CD") ? (
+                              <img src="/tech-logos/CICD.svg" alt="CI/CD" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "GitHub" ? (
+                              <img src="/tech-logos/github.svg" alt="GitHub" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "Supabase" ? (
+                              <img src="/tech-logos/supabase.svg" alt="Supabase" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "Slack" ? (
+                              <img src="/tech-logos/slack.svg" alt="Slack" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : tech.name === "UX/UI" ? (
+                              <img src="/tech-logos/uxui.svg" alt="UX/UI" style={{ filter: "brightness(0) invert(1)" }} />
+                            ) : (
+                              <img
+                                src={`https://cdn.simpleicons.org/${tech.icon}/ffffff`}
+                                alt={tech.name}
+                              />
+                            )}
+                          </div>
                           <span className="stack-name">{tech.name}</span>
                         </div>
                       ))}

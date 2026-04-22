@@ -63,8 +63,8 @@ export default function Orbit() {
             <div className="planet p-8" data-tooltip="HTML">
               <img src="https://cdn.simpleicons.org/html5/ffffff" alt="HTML" />
             </div>
-            <div className="planet p-3" data-tooltip="CSS">
-              <img src="/tech-logos/css.png" alt="CSS" style={{ width: "24px" }} />
+            <div className="planet p-3" data-tooltip="CSS3">
+              <img src="/tech-logos/css3.svg" alt="CSS3" style={{ width: "29px", filter: "brightness(0) invert(1)" }} />
             </div>
           </div>
 
@@ -74,7 +74,7 @@ export default function Orbit() {
               <img src="https://cdn.simpleicons.org/docker/ffffff" alt="Docker" />
             </div>
             <div className="planet p-2" data-tooltip="AWS">
-              <img src="/tech-logos/aws.png" alt="AWS" style={{ width: "24px" }} />
+              <img src="/tech-logos/aws.svg" alt="AWS" style={{ width: "24px", filter: "brightness(0) invert(1)" }} />
             </div>
             <div className="planet p-3" data-tooltip="Tailwind CSS">
               <img src="https://cdn.simpleicons.org/tailwindcss/ffffff" alt="Tailwind" />
@@ -89,7 +89,7 @@ export default function Orbit() {
               <img src="https://cdn.simpleicons.org/vercel/ffffff" alt="Vercel" />
             </div>
             <div className="planet p-8" data-tooltip="OpenAI">
-              <img src="/tech-logos/openai.png" alt="OpenAI" style={{ width: "24px" }} />
+              <img src="/tech-logos/openai.svg" alt="OpenAI" style={{ width: "29px", filter: "brightness(0) invert(1)" }} />
             </div>
           </div>
 
@@ -102,7 +102,7 @@ export default function Orbit() {
               <img src="/tech-logos/claude.png" alt="Claude" style={{ width: "24px" }} />
             </div>
             <div className="planet p-3" data-tooltip="UX/UI">
-              <img src="/tech-logos/ux-ui.png" alt="UX/UI" style={{ width: "24px" }} />
+              <img src="/tech-logos/uxui.svg" alt="UX/UI" style={{ width: "29px", filter: "brightness(0) invert(1)" }} />
             </div>
             <div className="planet p-4" data-tooltip="REST API">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">

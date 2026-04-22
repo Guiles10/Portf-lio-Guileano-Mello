@@ -160,7 +160,7 @@ export default function Projects() {
     <section id="projetos" className="container">
       <Reveal>
         <span className="mono section-label">// 003 — PROJETOS REALIZADOS</span>
-        <h2 className="section-title section-header">Laboratório & Desenvolvimentos.</h2>
+        <h2 className="section-title section-header">Laboratório & desenvolvimentos</h2>
 
 
         <div className="realizados-grid">

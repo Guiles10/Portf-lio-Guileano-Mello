@@ -6,7 +6,7 @@ export default function Expertise() {
       <section id="expertise" className="container">
         <span className="mono section-label">// 002 — ÁREAS DE ATUAÇÃO</span>
         <h2 className="section-title section-header">
-          Perfil Híbrido. Resultados Exponenciais.
+          Perfil dinâmico, desenvolvedor fullcycle
         </h2>
 
         <div className="expertise-grid">
@@ -28,8 +28,8 @@ export default function Expertise() {
             <ul className="exp-list">
               <li>React, Next.js & TypeScript</li>
               <li>Node.js, NestJS & APIs REST</li>
-              <li>PostgreSQL, MongoDB & SQL</li>
-              <li>Cloud, Docker & CI/CD</li>
+              <li>PostgreSQL, SQL & Supabase</li>
+              <li>Performance & Escalabilidade</li>
             </ul>
           </div>
 
@@ -46,12 +46,12 @@ export default function Expertise() {
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
             </div>
-            <h3 className="exp-title">[UX/UI & Conversão]</h3>
+            <h3 className="exp-title">[Full Cycle Developer]</h3>
             <ul className="exp-list">
-              <li>Design System & Prototipagem</li>
-              <li>Interfaces Otimizadas (SEO & LCP)</li>
-              <li>Testes A/B & Análise de Dados</li>
-              <li>Automações & Webhooks</li>
+              <li>Sistemas alinhados à realidade do usuário</li>
+              <li>Foco em usabilidade e adoção real</li>
+              <li>Arquitetura centrada no ambiente do cliente</li>
+              <li>Do planejamento ao ambiente de produção</li>
             </ul>
           </div>
 
@@ -65,16 +65,19 @@ export default function Expertise() {
                 stroke="currentColor"
                 strokeWidth="2"
               >
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
+                <path d="M17 6.1L12.6 1.15a1 1 0 0 0-1.2 0L7 6.1"></path>
+                <path d="M17 19.8l-4.4 4.95a1 1 0 0 1-1.2 0L7 19.8"></path>
+                <path d="M21 7.5l-4.5 4.5 4.5 4.5"></path>
+                <path d="M3 7.5l4.5 4.5L3 16.5"></path>
+                <path d="M19 12H5"></path>
               </svg>
             </div>
-            <h3 className="exp-title">[Sistemas SaaS & E-commerce]</h3>
+            <h3 className="exp-title">[Comunicação & Adaptabilidade]</h3>
             <ul className="exp-list">
-              <li>Arquitetura de Software Escalável</li>
-              <li>Sistemas de Assinatura & Dashboard</li>
-              <li>Segurança & Autenticação (JWT/OAuth)</li>
+              <li>Ponte entre o técnico e o usuário final</li>
+              <li>Vocabulário adaptado (Dev para Leigo)</li>
+              <li>Alinhamento de expectativas e resultados</li>
+              <li>Empatia e foco na solução de problemas</li>
             </ul>
           </div>
         </div>

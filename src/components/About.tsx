@@ -8,9 +8,37 @@ export default function About() {
       <section id="sobre" className="container">
         <span className="mono section-label">// 001 — SOBRE MIM</span>
         <div className="about-grid">
+          <div className="about-photo">
+            <div className="photo-inner">
+              <img 
+                src="/images/profile-guileano.jpg" 
+                alt="Guileano Gadea de Mello"
+                style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.8 }}
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                  e.currentTarget.parentElement?.querySelector('svg')?.setAttribute("style", "display: block");
+                }}
+              />
+              <svg
+                width="120"
+                height="120"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--text-muted)"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                style={{ display: "none" }}
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+          </div>
+
           <div className="about-content">
             <h2 className="section-title" style={{ marginBottom: "2rem" }}>
-              Resultados Orientados por Códigos & Dados
+              Perfil dinâmico, desenvolvedor fullcycle
             </h2>
             <p
               style={{
@@ -20,8 +48,9 @@ export default function About() {
                 lineHeight: "1.8"
               }}
             >
-              Sou formado como desenvolvedor Web Full Stack, com uma visão Full Cycle, levando em consideração não apenas o código e os dados mas também o impacto e a adaptabilidade do sistema no ambiente real do usuário. 
-              Focado em construir soluções digitais de alta performance utilizando diversas tecnologias e ecossistemas como JavaScript, TypeScript, Node.js, React, Next.js e Nest.js. 
+              Perfil dinâmico (integração entre o desenvolvimento técnico e a experiência do usuário final). 
+              Sou formado como desenvolvedor Web Full Stack, com uma visão Full Cycle, levando em consideração não apenas o código e os dados mas também o impacto e a adaptabilidade do sistema no ambiente real. 
+              Focado em construir soluções digitais de alta performance utilizando tecnologias modernas como JavaScript, TypeScript, Node.js, React, Next.js e Nest.js. 
               Já construí projetos (Sites, E-commerce, Sistemas SaaS) completos linkando Frontend, Backend, banco de dados, APIs REST... até levar para ambiente de produção. 
               Garantindo eficiência, velocidade e uma experiência sólida ao usuário.
             </p>
@@ -43,35 +72,6 @@ export default function About() {
                 <div className="metric-line"></div>
                 <span className="metric-val">35+</span>
               </div>
-
-            </div>
-          </div>
-
-          <div className="about-photo">
-            <div className="photo-inner">
-              <img 
-                src="https://media.licdn.com/dms/image/v2/C4D03AQE1f_OQ_O_O_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1651515151?e=1715151200&v=beta&t=example" 
-                alt="Guileano"
-                style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.8 }}
-                onError={(e) => {
-                  e.currentTarget.style.display = "none";
-                  e.currentTarget.parentElement?.querySelector('svg')?.setAttribute("style", "display: block");
-                }}
-              />
-              <svg
-                width="120"
-                height="120"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--text-muted)"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                style={{ display: "none" }}
-              >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
             </div>
           </div>
         </div>
