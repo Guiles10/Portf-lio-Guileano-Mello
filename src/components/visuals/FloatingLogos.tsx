@@ -86,11 +86,12 @@ export default function FloatingLogos() {
             />
             
             {!failedIcons.has(el.tech.name) ? (
-              <div style={{ position: "relative", width: "50%", height: "50%", opacity: 0.5, filter: "brightness(2)", marginBottom: "4px" }}>
+              <div style={{ position: "relative", width: "50%", height: "50%", opacity: 0.5, marginBottom: "4px" }}>
                 <Image
-                  src={`https://cdn.simpleicons.org/${el.tech.icon}/ffffff`}
+                  src={el.tech.icon}
                   alt={el.tech.name}
                   fill
+                  className="tech-logo"
                   style={{ objectFit: "contain" }}
                   onError={() => handleIconError(el.tech.name)}
                 />

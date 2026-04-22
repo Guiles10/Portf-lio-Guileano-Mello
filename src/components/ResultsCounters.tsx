@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { METRICS } from "@/constants/metrics";
 
 export default function ResultsCounters() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -60,8 +61,8 @@ export default function ResultsCounters() {
       }, stepTime);
     };
 
-    animateVal(35, setProj);
-    animateVal(3, setYears);
+    animateVal(METRICS.projects, setProj);
+    animateVal(METRICS.experienceYears, setYears);
   };
 
   return (

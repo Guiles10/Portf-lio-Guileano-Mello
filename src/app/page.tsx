@@ -7,7 +7,7 @@ import Expertise from "@/components/Expertise";
 import Projects from "@/components/Projects";
 import Stack from "@/components/Stack";
 import Education from "@/components/Education";
-import ResultsCounters from "@/components/ResultsCounters";
+
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -47,9 +47,9 @@ export default function Home() {
       <div className="section-divider" />
       <Education />
       
-      <div className="section-divider" />
-      <ResultsCounters />
+
       
+      <div className="section-divider" />
       <Contact />
       
       <Footer />
