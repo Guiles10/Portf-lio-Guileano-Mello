@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TECH_STACK } from "@/constants/tech-stack";
@@ -12,9 +13,9 @@ export default function FloatingLogos() {
   useEffect(() => {
     setMounted(true);
     
-    // Reduced density for mobile
+    // Reduced density for performance (Clean Code)
     const isMobile = window.innerWidth < 768;
-    const newElements = TECH_STACK.filter((_, i) => isMobile ? i % 3 === 0 : true).map((tech, i) => ({
+    const newElements = TECH_STACK.filter((_, i) => isMobile ? i % 4 === 0 : i % 2 === 0).map((tech, i) => ({
       id: `logo-${i}-${tech.name}`,
       tech: tech,
       x: Math.random() * 90 + 5,
@@ -85,20 +86,15 @@ export default function FloatingLogos() {
             />
             
             {!failedIcons.has(el.tech.name) ? (
-              <img
-                src={`https://cdn.simpleicons.org/${el.tech.icon}/ffffff`}
-                alt={el.tech.name}
-                onError={() => handleIconError(el.tech.name)}
-                className="floating-icon-img"
-                style={{
-                  width: "50%",
-                  height: "50%",
-                  objectFit: "contain",
-                  filter: "brightness(2)",
-                  opacity: 0.5,
-                  marginBottom: "4px"
-                }}
-              />
+              <div style={{ position: "relative", width: "50%", height: "50%", opacity: 0.5, filter: "brightness(2)", marginBottom: "4px" }}>
+                <Image
+                  src={`https://cdn.simpleicons.org/${el.tech.icon}/ffffff`}
+                  alt={el.tech.name}
+                  fill
+                  style={{ objectFit: "contain" }}
+                  onError={() => handleIconError(el.tech.name)}
+                />
+              </div>
             ) : (
               <div className="floating-icon-text" style={{ color: "white", fontWeight: "bold", opacity: 0.6, marginBottom: "4px" }}>
                 {el.tech.name[0]}

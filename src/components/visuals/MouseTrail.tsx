@@ -25,6 +25,8 @@ const colors = [
 ];
 
 export default function MouseTrail() {
+  const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const [particles, setParticles] = useState<Particle[]>([]);
   
   const addParticle = useCallback((x: number, y: number) => {
@@ -41,6 +43,12 @@ export default function MouseTrail() {
   }, []);
 
   useEffect(() => {
+    setMounted(true);
+    const mobile = window.innerWidth < 768;
+    setIsMobile(mobile);
+
+    if (mobile) return; // Don't attach listeners on mobile
+
     let lastX = 0;
     let lastY = 0;
     const threshold = 40; // Only spawn every 40px of movement
@@ -57,6 +65,8 @@ export default function MouseTrail() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [addParticle]);
+
+  if (!mounted || isMobile) return null;
 
   return (
     <div

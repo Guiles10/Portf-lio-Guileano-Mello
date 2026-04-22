@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "./Reveal";
 import { TECH_STACK } from "@/constants/tech-stack";
@@ -109,33 +110,34 @@ export default function Stack() {
                         <div className="stack-item" key={tech.name}>
                           <div className="stack-icon-wrapper">
                             {tech.name === "AWS" ? (
-                              <img src="/tech-logos/aws.svg" alt="AWS" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/aws.svg" alt="AWS" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "OpenAI" ? (
-                              <img src="/tech-logos/openai.svg" alt="OpenAI" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/openai.svg" alt="OpenAI" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "CSS3" ? (
-                              <img src="/tech-logos/css3.svg" alt="CSS3" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/css3.svg" alt="CSS3" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "Sass / CSS" ? (
-                              <img src="/tech-logos/sass.svg" alt="Sass" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/sass.svg" alt="Sass" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "Fire Bird 2.5" ? (
-                              <img src="/tech-logos/firebird.svg" alt="Firebird" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/firebird.svg" alt="Firebird" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "Delphi" ? (
-                              <img src="/tech-logos/delphi.svg" alt="Delphi" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/delphi.svg" alt="Delphi" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name.includes("Claude") ? (
-                              <img src="/tech-logos/claude.svg" alt="Claude" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/claude.svg" alt="Claude" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name.includes("CI/CD") ? (
-                              <img src="/tech-logos/CICD.svg" alt="CI/CD" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/CICD.svg" alt="CI/CD" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "GitHub" ? (
-                              <img src="/tech-logos/github.svg" alt="GitHub" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/github.svg" alt="GitHub" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "Supabase" ? (
-                              <img src="/tech-logos/supabase.svg" alt="Supabase" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/supabase.svg" alt="Supabase" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "Slack" ? (
-                              <img src="/tech-logos/slack.svg" alt="Slack" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/slack.svg" alt="Slack" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : tech.name === "UX/UI" ? (
-                              <img src="/tech-logos/uxui.svg" alt="UX/UI" style={{ filter: "brightness(0) invert(1)" }} />
+                              <Image src="/tech-logos/uxui.svg" alt="UX/UI" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
                             ) : (
-                              <img
+                              <Image
                                 src={`https://cdn.simpleicons.org/${tech.icon}/ffffff`}
                                 alt={tech.name}
+                                width={32} height={32}
                               />
                             )}
                           </div>

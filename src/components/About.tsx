@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 export default function About() {
@@ -10,10 +11,11 @@ export default function About() {
         <div className="about-grid">
           <div className="about-photo">
             <div className="photo-inner">
-              <img 
+              <Image 
                 src="/images/profile-guileano.jpg" 
                 alt="Guileano Gadea de Mello"
-                style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.8 }}
+                fill
+                style={{ objectFit: "cover", opacity: 0.8 }}
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
                   e.currentTarget.parentElement?.querySelector('svg')?.setAttribute("style", "display: block");
@@ -38,7 +40,7 @@ export default function About() {
 
           <div className="about-content">
             <h2 className="section-title" style={{ marginBottom: "2rem" }}>
-              Perfil dinâmico, desenvolvedor fullcycle
+              Resultados orientados por códigos & dados
             </h2>
             <p
               style={{
