@@ -17,7 +17,7 @@ export const TECH_STACK: Technology[] = [
   { name: "CSS3", icon: "/tech-logos/css3.svg", glow: "rgba(21, 114, 182, 0.2)", category: "Frontend" },
 
   // Backend
-  { name: "Node.js", icon: "/tech-logos/nodedotjs.svg", glow: "rgba(104, 160, 99, 0.2)", category: "Backend" },
+  { name: "Node.js", icon: "/tech-logos/nodedotjs.svg", glow: "rgba(104, 160, 99, 0.2)", category: "Frontend" },
   { name: "NestJS", icon: "/tech-logos/nestjs.svg", glow: "rgba(224, 35, 78, 0.2)", category: "Backend" },
   { name: "Prisma", icon: "/tech-logos/prisma.svg", glow: "rgba(12, 50, 73, 0.2)", category: "Backend" },
   { name: "PostgreSQL", icon: "/tech-logos/postgresql.svg", glow: "rgba(51, 103, 145, 0.2)", category: "Backend" },
@@ -43,4 +43,7 @@ export const TECH_STACK: Technology[] = [
   { name: "Fire Bird 2.5", icon: "/tech-logos/firebord2.5.svg", glow: "rgba(227, 79, 38, 0.2)", category: "Tools" },
   { name: "Delphi", icon: "/tech-logos/delphi.svg", glow: "rgba(165, 30, 36, 0.2)", category: "Tools" },
   { name: "UX/UI", icon: "/tech-logos/uxui.svg", glow: "rgba(242, 78, 30, 0.2)", category: "Tools" },
+  { name: "Vercel", icon: "/tech-logos/vercel.svg", glow: "rgba(255, 255, 255, 0.15)", category: "Tools" },
+  { name: "Render", icon: "/tech-logos/render.svg", glow: "rgba(70, 232, 157, 0.2)", category: "Tools" },
+  { name: "Google Drive", icon: "/tech-logos/googledrive.svg", glow: "rgba(52, 168, 83, 0.2)", category: "Tools" },
 ];
