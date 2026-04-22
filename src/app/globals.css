@@ -175,6 +175,11 @@ h2, h3, h4 {
 
 .text-orange { color: var(--primary); }
 
+/* Fix scroll offset for fixed header */
+section[id] {
+  scroll-margin-top: 120px;
+}
+
 /* --- UTILITY & LAYOUT --- */
 .container {
   max-width: 1440px;

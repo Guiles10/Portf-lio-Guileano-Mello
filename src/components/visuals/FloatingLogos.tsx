@@ -15,7 +15,7 @@ export default function FloatingLogos() {
     
     // Reduced density for performance (Clean Code)
     const isMobile = window.innerWidth < 768;
-    const excludedLogos = ["Meta Ads", "Analytics", "Google Ads"];
+    const excludedLogos = ["Meta Ads", "Analytics", "Google Ads", "CRO / Funis", "GTM"];
     const filteredStack = TECH_STACK.filter(tech => !excludedLogos.includes(tech.name));
     
     const newElements = filteredStack.filter((_, i) => isMobile ? i % 4 === 0 : i % 2 === 0).map((tech, i) => ({
