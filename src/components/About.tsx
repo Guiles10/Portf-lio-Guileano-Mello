@@ -38,7 +38,7 @@ export default function About() {
 
           <div className="about-content">
             <h2 className="section-title" style={{ marginBottom: "2rem" }}>
-              Perfil dinâmico, desenvolvedor fullcycle
+              Resultados Orientados por Códigos & Dados
             </h2>
             <p
               style={{
