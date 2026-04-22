@@ -113,7 +113,7 @@ export default function Stack() {
                               src={tech.icon}
                               alt={tech.name}
                               width={32} height={32}
-                              style={["AWS", "OpenAI", "CSS3", "Sass / CSS", "Fire Bird 2.5", "Delphi", "Claude / IA", "CI/CD", "GitHub", "Supabase", "Slack", "UX/UI", "Next.js", "Node.js"].includes(tech.name) ? { filter: "brightness(0) invert(1)" } : undefined}
+                              style={["AWS", "OpenAI", "CSS3", "Sass / CSS", "Fire Bird 2.5", "Delphi", "Claude / IA", "CI/CD", "GitHub", "Supabase", "Slack", "UX/UI", "Next.js", "Node.js", "APIs REST"].includes(tech.name) ? { filter: "brightness(0) invert(1)" } : undefined}
                             />
                           </div>
                           <span className="stack-name">{tech.name}</span>

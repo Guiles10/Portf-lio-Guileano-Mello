@@ -22,7 +22,7 @@ export const TECH_STACK: Technology[] = [
   { name: "Prisma", icon: "/tech-logos/prisma.svg", glow: "rgba(12, 50, 73, 0.2)", category: "Backend" },
   { name: "PostgreSQL", icon: "/tech-logos/postgresql.svg", glow: "rgba(51, 103, 145, 0.2)", category: "Backend" },
   { name: "Supabase", icon: "/tech-logos/supabase.svg", glow: "rgba(62, 207, 142, 0.2)", category: "Backend" },
-  { name: "APIs REST", icon: "https://cdn.simpleicons.org/postman/ffffff", glow: "rgba(255, 108, 55, 0.2)", category: "Backend" },
+  { name: "APIs REST", icon: "/tech-logos/api.svg", glow: "rgba(255, 108, 55, 0.2)", category: "Backend" },
   { name: "Docker", icon: "/tech-logos/docker.svg", glow: "rgba(0, 144, 204, 0.2)", category: "Backend" },
   { name: "CI/CD", icon: "/tech-logos/CICD.svg", glow: "rgba(32, 136, 255, 0.2)", category: "Backend" },
 
@@ -40,7 +40,7 @@ export const TECH_STACK: Technology[] = [
   { name: "Claude / IA", icon: "/tech-logos/claude.svg", glow: "rgba(217, 119, 87, 0.2)", category: "Tools" },
   { name: "OpenAI", icon: "/tech-logos/openai.svg", glow: "rgba(116, 170, 156, 0.2)", category: "Tools" },
   { name: "Slack", icon: "/tech-logos/slack.svg", glow: "rgba(74, 21, 75, 0.2)", category: "Tools" },
-  { name: "Fire Bird 2.5", icon: "/tech-logos/firebird.svg", glow: "rgba(227, 79, 38, 0.2)", category: "Tools" },
+  { name: "Fire Bird 2.5", icon: "/tech-logos/firebord2.5.svg", glow: "rgba(227, 79, 38, 0.2)", category: "Tools" },
   { name: "Delphi", icon: "/tech-logos/delphi.svg", glow: "rgba(165, 30, 36, 0.2)", category: "Tools" },
   { name: "UX/UI", icon: "/tech-logos/uxui.svg", glow: "rgba(242, 78, 30, 0.2)", category: "Tools" },
 ];

@@ -105,10 +105,7 @@ export default function Orbit() {
               <Image src="/tech-logos/uxui.svg" alt="UX/UI" width={29} height={29} style={{ filter: "brightness(0) invert(1)" }} />
             </div>
             <div className="planet p-4" data-tooltip="REST API">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
-                <path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.1-3.9-4.5-.4-3.5-3.4-6-6.9-6-2.5 0-4.6 1.3-5.8 3.2C3.2 7.8 1.5 9.4 1.5 11.5c0 2.5 2 4.5 4.5 4.5" />
-                <path d="M12 11h.01M16 11h.01M8 11h.01M12 15h.01M16 15h.01M8 15h.01" strokeWidth="3" strokeLinecap="round" />
-              </svg>
+              <Image src="/tech-logos/api.svg" alt="API" width={32} height={32} style={{ filter: "brightness(0) invert(1)" }} />
             </div>
             <div className="planet p-5" data-tooltip="Google Analytics">
               <Image src="https://cdn.simpleicons.org/googleanalytics/ffffff" alt="GA" width={32} height={32} />
