@@ -65,7 +65,7 @@ export default function ExperienceTimeline() {
     <Reveal>
       <section id="experiencia" className="container">
         <span className="mono section-label">// 002 — TRAJETÓRIA</span>
-        <h2 className="section-title section-header">Experiência Profissional</h2>
+        <h2 className="section-title section-header">Experiência profissional</h2>
         <div className="experience-list">
           {experiences.map((exp, idx) => (
             <div key={idx} className="experience-item" style={{ marginBottom: "4rem" }}>

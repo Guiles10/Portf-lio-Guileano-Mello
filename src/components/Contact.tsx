@@ -4,15 +4,15 @@ export default function Contact() {
   return (
     <Reveal>
       <section id="contato" className="container">
-        <div style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}>
-          <span className="mono section-label" style={{ justifyContent: "center", display: "flex" }}>
+        <div style={{ textAlign: "left", maxWidth: "900px" }}>
+          <span className="mono section-label" style={{ justifyContent: "flex-start", display: "flex" }}>
             // 006 — INICIAR TRANSMISSÃO
           </span>
           <h2 className="contact-large">
-            Pronto para Desenvolver ou Aprimorar seu sistema.
+            Pronto para desenvolver ou aprimorar seu sistema
           </h2>
           
-          <div className="contact-links" style={{ justifyContent: "center", marginTop: "4rem" }}>
+          <div className="contact-links" style={{ justifyContent: "flex-start", marginTop: "4rem" }}>
             <a href="mailto:guiles.mello@gmail.com" className="contact-link-premium">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               <div style={{ textAlign: "left" }}>
