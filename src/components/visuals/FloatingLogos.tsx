@@ -15,7 +15,10 @@ export default function FloatingLogos() {
     
     // Reduced density for performance (Clean Code)
     const isMobile = window.innerWidth < 768;
-    const newElements = TECH_STACK.filter((_, i) => isMobile ? i % 4 === 0 : i % 2 === 0).map((tech, i) => ({
+    const excludedLogos = ["Meta Ads", "Analytics", "Google Ads"];
+    const filteredStack = TECH_STACK.filter(tech => !excludedLogos.includes(tech.name));
+    
+    const newElements = filteredStack.filter((_, i) => isMobile ? i % 4 === 0 : i % 2 === 0).map((tech, i) => ({
       id: `logo-${i}-${tech.name}`,
       tech: tech,
       x: Math.random() * 90 + 5,

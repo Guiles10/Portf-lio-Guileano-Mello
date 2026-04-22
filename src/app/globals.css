@@ -1228,6 +1228,46 @@ nav.scrolled {
   .contact-large { font-size: 1.8rem; }
 }
 
+/* --- EDUCATION CERTIFICATES --- */
+.cert-corner-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 140px;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  z-index: 5;
+}
+
+.cert-corner-badge:hover {
+  transform: scale(1.1) rotate(2deg);
+  border-color: var(--primary);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.cert-badge-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+@media (max-width: 500px) {
+  .cert-corner-badge {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 2rem;
+  }
+}
+
 /* --- PROJETOS REALIZADOS --- */
 .realizados-grid {
   display: grid;
